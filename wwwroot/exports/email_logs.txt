@@ -1,0 +1,50 @@
+[12/29/2025 7:31:47 PM] To: ahmadhabashstudy@gmail.com, Subject: dddddddddddd, Body: aaaaaaaaaaaaaaaaaaa
+----------------------------------------
+[12/29/2025 7:44:17 PM] To: ahmadhabashstudy@gmail.com, Subject: Greeting, Body: hello world
+----------------------------------------
+[12/29/2025 7:56:51 PM] To: ahmadhabashstudy@gmail.com, Subject: Greeting, Body: hello world
+----------------------------------------
+[1/7/2026 8:49:09 PM] SUCCESS: Sent via SMTP [Authenticated as botemailtesting101@gmail.com] To: ahmad162habash@gmail.com, Subject: A quick message, Body: hello 
+----------------------------------------
+[1/8/2026 4:02:57 PM] ERROR: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to [Authenticated as YOUR_EMAIL@gmail.com] To: ahmadfadihabash162@gmail.com, Subject: Greeting from Task Manager, Body: hello, this is from taskmanager 
+----------------------------------------
+[1/8/2026 4:04:59 PM] ERROR: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to [Authenticated as YOUR_EMAIL@gmail.com] To: ahmadfadihabash162@gmail.com, Subject: Test Message, Body: hello, this is from taskmanager 
+----------------------------------------
+[1/8/2026 4:09:18 PM] SUCCESS: Sent via SMTP [Authenticated as botemailtesting101@gmail.com] To: ahmadfadihabash162@gmail.com, Subject: Quick Note, Body: helo 
+----------------------------------------
+[1/8/2026 6:57:45 PM] SUCCESS: Sent via SMTP [Authenticated as botemailtesting101@gmail.com] To: ahmadfadihabash162@gmail.com, Subject: Task Manager Email, Body: woah, this is sent through taskmanager WHATTTTT 
+----------------------------------------
+[1/8/2026 7:02:06 PM] SUCCESS: Sent via SMTP [Authenticated as botemailtesting101@gmail.com] To: ahmadfadihabash162@gmail.com, Subject: Apologies for Being Late, Body: Dear Ahmad,
+
+I hope this message finds you well. I wanted to sincerely apologize for being late to work today. I encountered some unexpected delays that were beyond my control. I understand the importance of punctuality and I assure you that I am taking steps to prevent this from happening in the future.
+
+Thank you for your understanding.
+
+Best regards,
+
+[Your Name] 
+----------------------------------------
+[1/8/2026 7:05:09 PM] SUCCESS: Sent via SMTP [Authenticated as botemailtesting101@gmail.com] To: ahmadhabashstudy@gmail.com, Subject: Presentation on Being Late for Work, Body: Dear Ahmad,
+
+I have created a presentation on the topic of being late for work. Please find the attached file for your review.
+
+Best regards,
+
+Your Assistant [Attachment: Being_Late_for_Work.pptx]
+----------------------------------------
+[1/8/2026 9:37:46 PM] SUCCESS: Sent via SMTP [Authenticated as botemailtesting101@gmail.com] To: ahmadfadihabash162@gmail.com, Subject: Essay on Email, Body: Dear Ahmad,
+
+Please find attached the essay on email.
+
+Best regards,
+Your Email Bot [Attachment: Essay_on_Email.docx]
+----------------------------------------
+[1/8/2026 9:44:59 PM] SUCCESS: Sent via SMTP [Authenticated as botemailtesting101@gmail.com] To: ahmadfadihabash162@gmail.com, Subject: Chart on Religion Percentage in America, Body: Please find attached the chart showing the percentage of various religions in America. [Attachment: religion_percentage_america.png]
+----------------------------------------
+[1/8/2026 9:48:37 PM] SUCCESS: Sent via SMTP [Authenticated as botemailtesting101@gmail.com] To: ahmadfadihabash162@gmail.com, Subject: Forgot to Send This Earlier, Body: Hi Ahmad,
+
+I apologize for forgetting to send this earlier at work. Please find attached the chart on the percentage of religions in America.
+
+Best regards,
+[Your Name] [Attachment: Religion_Percentage_America.png]
+----------------------------------------

@@ -1,0 +1,103 @@
+@page
+@model TaskManager.Pages.Folders.EditModel
+@{
+    ViewData["Title"] = "Edit Folder";
+}
+
+<div class="container-fluid py-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-xl-6">
+            <div class="card shadow-sm">
+                <div class="card-header card-header-gradient">
+                    <h4 class="mb-0">Edit Folder</h4>
+                </div>
+                <div class="card-body">
+                    <form method="post" enctype="multipart/form-data">
+                        <input type="hidden" asp-for="Folder.Id" />
+                        <input type="hidden" asp-for="Folder.CreatedAt" />
+                        <input type="hidden" asp-for="Folder.Order" />
+                        <input type="hidden" asp-for="Folder.ImagePath" />
+                        
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                        
+                        <div class="mb-3">
+                            <label asp-for="Folder.Name" class="form-label fw-semibold">Folder Name</label>
+                            <input asp-for="Folder.Name" class="form-control" placeholder="Enter folder name" />
+                            <span asp-validation-for="Folder.Name" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold d-block">Folder Style</label>
+                            <div class="btn-group w-100" role="group" aria-label="Folder Style Toggle">
+                                <input type="radio" class="btn-check" name="styleType" id="styleColor" value="color" autocomplete="off" @(string.IsNullOrEmpty(Model.Folder.ImagePath) ? "checked" : "")>
+                                <label class="btn btn-outline-primary" for="styleColor">Solid Color</label>
+
+                                <input type="radio" class="btn-check" name="styleType" id="styleImage" value="image" autocomplete="off" @(!string.IsNullOrEmpty(Model.Folder.ImagePath) ? "checked" : "")>
+                                <label class="btn btn-outline-primary" for="styleImage">Custom Image</label>
+                            </div>
+                        </div>
+
+                        <!-- Hidden field to track if image should be removed -->
+                        <input type="hidden" name="RemoveImage" id="RemoveImage" value="false" />
+
+                        <div id="colorSection" class="mb-3 @(!string.IsNullOrEmpty(Model.Folder.ImagePath) ? "d-none" : "")">
+                            <label asp-for="Folder.Color" class="form-label fw-semibold">Color</label>
+                            <input type="color" asp-for="Folder.Color" class="form-control form-control-color" title="Choose folder color" />
+                            <span asp-validation-for="Folder.Color" class="text-danger"></span>
+                        </div>
+
+                        <div id="imageSection" class="mb-3 @(string.IsNullOrEmpty(Model.Folder.ImagePath) ? "d-none" : "")">
+                            <label asp-for="ImageFile" class="form-label fw-semibold">Folder Image</label>
+                            <input type="file" asp-for="ImageFile" class="form-control" accept="image/*" id="imageInput" />
+                            @if (!string.IsNullOrEmpty(Model.Folder.ImagePath))
+                            {
+                                <div class="mt-2" id="currentImagePreview">
+                                    <small class="text-muted">Current image:</small>
+                                    <img src="@Model.Folder.ImagePath" alt="Folder image" class="img-thumbnail" style="max-width: 100px; max-height: 100px;" />
+                                </div>
+                            }
+                            <small class="text-muted">Upload a new image to replace the current one</small>
+                            <span asp-validation-for="ImageFile" class="text-danger"></span>
+                        </div>
+
+                        <div class="d-flex gap-2 justify-content-end">
+                            <a asp-page="../Tasks/Board" class="btn btn-outline-secondary">Cancel</a>
+                            <button type="submit" class="btn btn-primary">Save Changes</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const styleColor = document.getElementById('styleColor');
+            const styleImage = document.getElementById('styleImage');
+            const colorSection = document.getElementById('colorSection');
+            const imageSection = document.getElementById('imageSection');
+            const imageInput = document.getElementById('imageInput');
+            const removeImageInput = document.getElementById('RemoveImage');
+
+            function updateVisibility() {
+                if (styleColor.checked) {
+                    colorSection.classList.remove('d-none');
+                    imageSection.classList.add('d-none');
+                    imageInput.value = ''; // Clear file input
+                    removeImageInput.value = 'true'; // Mark for removal
+                } else {
+                    colorSection.classList.add('d-none');
+                    imageSection.classList.remove('d-none');
+                    removeImageInput.value = 'false';
+                }
+            }
+
+            styleColor.addEventListener('change', updateVisibility);
+            styleImage.addEventListener('change', updateVisibility);
+        });
+    </script>
+}
+

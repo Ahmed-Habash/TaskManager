@@ -1,0 +1,245 @@
+@page
+@model TaskManager.Pages.TaskExecutioner.IndexModel
+@{
+    ViewData["Title"] = "Task Executer";
+}
+
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8">
+            <div class="glass-card shadow-xl mb-4" style="height: calc(100vh - 200px); min-height: 600px; display: flex; flex-direction: column; overflow: hidden; border-radius: var(--radius-xl);">
+                <!-- Header -->
+                <div class="glass-panel p-3 border-bottom d-flex justify-content-between align-items-center">
+                    <div>
+                        <h5 class="mb-0 fw-bold"><i class="bi bi-cpu-fill text-primary"></i> AI Task Executer</h5>
+                        <small class="text-muted">Autonomous Document & Research Assistant</small>
+                    </div>
+                    <span class="badge rounded-pill bg-primary border-0 px-3 py-2 opacity-75 shadow-sm">
+                        <i class="bi bi-lightning-charge-fill me-1"></i> GPT-4 Powered
+                    </span>
+                </div>
+
+                <!-- Chat Window -->
+                <div id="chat-window" class="p-4 flex-grow-1 overflow-auto" style="background: rgba(var(--primary-color-rgb), 0.02);">
+                    @if (Model.ConversationHistory != null && Model.ConversationHistory.Count > 0)
+                    {
+                        @foreach (var msg in Model.ConversationHistory)
+                        {
+                            <div class="mb-3 d-flex @(msg.Role == "user" ? "justify-content-end" : "justify-content-start")">
+                                <div class="p-3 shadow-sm @(msg.Role == "user" ? "bg-primary text-white" : "glass-card text-dark dark-text-light")" 
+                                     style="border-radius: @(msg.Role == "user" ? "1.25rem 1.25rem 0.25rem 1.25rem" : "1.25rem 1.25rem 1.25rem 0.25rem"); max-width: 85%; line-height: 1.5;">
+                                     @if (msg.Role == "assistant")
+                                     {
+                                         @Html.Raw(msg.Content.Replace("\n", "<br/>"))
+                                     }
+                                     else
+                                     {
+                                         @msg.Content
+                                     }
+                                </div>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <div class="ai-welcome-state text-center mt-5 opacity-75">
+                            <i class="bi bi-stars display-1 d-block mb-3 text-primary animate-pulse"></i>
+                            <h4 class="fw-bold">What can I build or solve for you?</h4>
+                            <p class="text-muted">I can research, create professional documents, and automate board tasks.</p>
+                            
+                            <div class="suggested-chips d-flex flex-wrap gap-2 justify-content-center mt-4">
+                                <button class="btn btn-sm btn-outline-primary rounded-pill px-4 py-2" onclick="sendQuickPrompt('Create a 5 slide PPT about solar energy')">
+                                    <i class="bi bi-file-earmark-ppt"></i> Solar Power PPT
+                                </button>
+                                <button class="btn btn-sm btn-outline-primary rounded-pill px-4 py-2" onclick="sendQuickPrompt('Write a professional email for a 10% price increase')">
+                                    <i class="bi bi-envelope"></i> Client Email
+                                </button>
+                                <button class="btn btn-sm btn-outline-primary rounded-pill px-4 py-2" onclick="sendQuickPrompt('Research the best productivity tools for 2026')">
+                                    <i class="bi bi-search"></i> 2026 Research
+                                </button>
+                            </div>
+                        </div>
+                    }
+                </div>
+
+                <!-- Progress Container -->
+                <div id="progress-container" class="px-4 py-2 border-top glass-panel d-none">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="spinner-border spinner-border-sm text-primary" role="status"></div>
+                        <div class="flex-grow-1">
+                            <div class="small fw-bold mb-1" id="process-step">Thinking...</div>
+                            <div class="progress" style="height: 6px; border-radius: 3px; background: rgba(0,0,0,0.1);">
+                                <div id="process-bar" class="progress-bar progress-bar-striped progress-bar-animated" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer / Input -->
+                <div class="p-3 glass-panel border-top">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" id="history-json" value="@Model.HistoryJson" />
+                    <div class="input-group chat-input-wrapper glass-panel rounded-pill px-3 py-1 shadow-sm border">
+                        <span class="text-muted pe-2 d-flex align-items-center" data-bs-toggle="tooltip" data-bs-html="true" 
+                              title="<b>How to Command the AI:</b><br/>• <b>Docs:</b> 'Write an essay...'<br/>• <b>Excel:</b> 'Make a sheet with...'<br/>• <b>Charts:</b> 'Plot a line chart of...'<br/>• <b>Slides:</b> 'Create a presentation...'<br/>• <b>Email:</b> 'Send email...' (<i>Setup first</i>)">
+                            <i class="bi bi-question-circle"></i>
+                        </span>
+                        <input type="text" id="user-input" class="form-control border-0 bg-transparent py-2" 
+                               placeholder="Describe your task (e.g., 'Make a report on...')" autocomplete="off" />
+                        <button id="send-btn" class="btn btn-primary rounded-circle p-2 ms-2 lh-1 shadow-sm" style="width: 42px; height: 42px;">
+                            <i class="bi bi-arrow-up"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var chatWindow = document.getElementById("chat-window");
+    var historyField = document.getElementById("history-json");
+    var userInput = document.getElementById("user-input");
+    var sendBtn = document.getElementById("send-btn");
+    var progressContainer = document.getElementById("progress-container");
+    var progressBar = document.getElementById("process-bar");
+    var processStep = document.getElementById("process-step");
+
+    if (chatWindow) chatWindow.scrollTop = chatWindow.scrollHeight;
+
+    userInput.addEventListener("keypress", function(e) {
+        if (e.key === "Enter") {
+            sendMessage();
+        }
+    });
+
+    sendBtn.onclick = sendMessage;
+
+    async function sendMessage() {
+        var text = userInput.value.trim();
+        if (!text) return;
+        
+        appendMessage('User', text);
+        userInput.value = "";
+        userInput.disabled = true;
+        sendBtn.disabled = true;
+
+        // Show progress UI reset
+        progressContainer.classList.remove('d-none');
+        progressBar.style.width = '10%';
+        processStep.textContent = "AI is thinking...";
+
+        try {
+            var token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+            var history = historyField.value;
+
+            // Simple fake progress animation while waiting
+            let progressInterval = setInterval(() => {
+                let current = parseInt(progressBar.style.width);
+                if (current < 85) progressBar.style.width = (current + 5) + '%';
+            }, 800);
+
+            var response = await fetch('?handler=Chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'RequestVerificationToken': token
+                },
+                body: JSON.stringify({ command: text, historyJson: history })
+            });
+            
+            clearInterval(progressInterval);
+            progressBar.style.width = '100%';
+
+            if (!response.ok) throw new Error("Server error: " + response.status);
+
+            var data = await response.json();
+            
+            if (data.success) {
+                processStep.textContent = "Task complete!";
+                appendMessage('AI', data.reply);
+                historyField.value = data.historyJson;
+            } else {
+                appendMessage('AI', "Error: " + data.message);
+            }
+
+        } catch (error) {
+            appendMessage('AI', "Technical Failure: " + error.message);
+        } finally {
+            setTimeout(() => {
+                progressContainer.classList.add('d-none');
+                progressBar.style.width = '0%';
+                userInput.disabled = false;
+                sendBtn.disabled = false;
+                userInput.focus();
+            }, 1000);
+        }
+    }
+
+    function appendMessage(sender, text) {
+        // Remove welcome state if present
+        const welcome = chatWindow.querySelector('.ai-welcome-state');
+        if (welcome) welcome.remove();
+
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `mb-3 d-flex ${sender === 'User' ? 'justify-content-end' : 'justify-content-start'}`;
+
+        const innerDiv = document.createElement('div');
+        innerDiv.className = `p-3 shadow-sm ${sender === 'User' ? 'bg-primary text-white shadow-primary' : 'glass-card'}`;
+        innerDiv.style.borderRadius = sender === 'User' ? "1.25rem 1.25rem 0.25rem 1.25rem" : "1.25rem 1.25rem 1.25rem 0.25rem";
+        innerDiv.style.maxWidth = "85%";
+        innerDiv.style.lineHeight = "1.5";
+        innerDiv.style.fontSize = "0.95rem";
+        
+        if (sender === 'AI') {
+            innerDiv.innerHTML = convertLinks(text);
+        } else {
+            innerDiv.textContent = text;
+        }
+
+        messageDiv.appendChild(innerDiv);
+        chatWindow.appendChild(messageDiv);
+        chatWindow.scrollTop = chatWindow.scrollHeight;
+    }
+    
+    function convertLinks(text) {
+        // Remove any internal context tags
+        var cleanText = text.replace(/\[INTERNAL_CONTEXT: [\s\S]*?\]/g, "").trim();
+        
+        // Basic escaping of HTML but preserving our needed tags if we added any
+        // For simplicity in AI responses, we mostly care about markdown links
+        var escaped = cleanText.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+        
+        // Convert Markdown-style links [label](url) to <a> tags
+        // This regex handles both local /exports/ and external http links
+        var withLinks = escaped.replace(/\[([^\]]+)\]\((https?:\/\/|\/)[^\s\)]+\)/g, function(match, label, urlPart) {
+            var url = match.match(/\(([^)]+)\)/)[1];
+            return '<a href="' + url + '" target="_blank" class="fw-bold text-primary text-decoration-underline">' + label + '</a>';
+        });
+
+        return withLinks.replace(/\n/g, "<br/>");
+    }
+
+    function sendQuickPrompt(msg) {
+        userInput.value = msg;
+        sendMessage();
+    }
+</script>
+
+<style>
+    .dark-text-light { color: var(--text-color) !important; }
+    #chat-window::-webkit-scrollbar { width: 6px; }
+    #chat-window::-webkit-scrollbar-track { background: transparent; }
+    #chat-window::-webkit-scrollbar-thumb { background: rgba(var(--primary-color-rgb), 0.2); border-radius: 3px; }
+    #chat-window::-webkit-scrollbar-thumb:hover { background: rgba(var(--primary-color-rgb), 0.4); }
+    
+    .shadow-primary { box-shadow: 0 4px 14px rgba(var(--primary-color-rgb), 0.4); }
+    
+    .animate-pulse {
+        animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    @@keyframes pulse {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: .7; transform: scale(1.05); }
+    }
+</style>

@@ -1,0 +1,746 @@
+﻿@page
+@model TaskManager.Pages.Tasks.BoardModel
+@using System.Text.Encodings.Web
+@{
+    ViewData["Title"] = "Task Board";
+}
+
+<div class="board-container">
+    <div class="board-header mb-4">
+        <div class="d-flex justify-content-between align-items-end mb-3">
+            <div>
+                <h6 class="text-muted fw-bold text-uppercase mb-1" id="dynamic-greeting">Welcome Back</h6>
+                <h2 class="mb-0 fw-bold">Task Board</h2>
+            </div>
+            <div class="d-flex gap-2">
+                <a asp-page="./Create" class="btn btn-primary shadow-sm rounded-pill px-4">
+                    <i class="bi bi-plus-circle"></i> Add Task
+                </a>
+                <button type="button" class="btn btn-dark shadow-sm rounded-pill px-4" onclick="toggleAISidePanel()">
+                    <i class="bi bi-robot"></i> AI Assistant
+                </button>
+                <a asp-page="../Folders/Create" class="btn btn-outline-primary shadow-sm rounded-pill px-4">
+                    <i class="bi bi-folder-plus"></i> Add Folder
+                </a>
+            </div>
+        </div>
+        <div class="filter-tabs p-1 bg-light d-inline-flex rounded-pill mb-2 dark-filter-bg">
+            <a asp-page="./Board" asp-route-filter="all" class="btn rounded-pill px-3 py-1 btn-sm @(Model.Filter == "all" ? "btn-primary shadow-sm" : "btn-link text-decoration-none text-muted")">
+                All Tasks
+            </a>
+            <a asp-page="./Board" asp-route-filter="pending" class="btn rounded-pill px-3 py-1 btn-sm @(Model.Filter == "pending" ? "btn-warning shadow-sm" : "btn-link text-decoration-none text-muted")">
+                Pending
+            </a>
+            <a asp-page="./Board" asp-route-filter="completed" class="btn rounded-pill px-3 py-1 btn-sm @(Model.Filter == "completed" ? "btn-success shadow-sm" : "btn-link text-decoration-none text-muted")">
+                Completed
+            </a>
+        </div>
+    </div>
+
+    <form method="post" id="updateForm">
+        @Html.AntiForgeryToken()
+    </form>
+
+    <div class="board-content">
+        <!-- Unfolderred Tasks Section -->
+            <div class="folder-column mb-4 folder-card" data-folder-id="unfolderred">
+                <div class="folder-header" style="background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                        <h5 class="mb-0">
+                            <i class="bi bi-inbox"></i> Unfolderred Tasks
+                        </h5>
+                        <span class="badge bg-light text-dark ms-2 count-badge">@Model.UnfolderredTasks.Count</span>
+                    </div>
+                    <div class="progress-bar-container"></div>
+                </div>
+                <ul class="task-list" id="unfolderred" data-folder-id="null">
+                    @foreach (var task in Model.UnfolderredTasks ?? Enumerable.Empty<TaskManager.Models.TaskItem>())
+                    {
+                        <li class="task-item glass-card @(task.IsCompleted ? "task-completed" : "") @(task.DueDate.HasValue && task.DueDate.Value < DateTime.Now && !task.IsCompleted ? "task-overdue" : "") @(task.DueDate.HasValue && task.DueDate.Value.Date == DateTime.Now.Date && !task.IsCompleted ? "task-due-today" : "")" 
+                            data-id="@task.Id" 
+                            data-title="@task.Title" 
+                            data-description="@(task.Description ?? "")"
+                            data-completed="@(task.IsCompleted.ToString().ToLower())"
+                            draggable="true"
+                            ondragstart="handleTaskDragStart(event, @task.Id, '@JavaScriptEncoder.Default.Encode(task.Title)', '@JavaScriptEncoder.Default.Encode(task.Description ?? "")')">
+                            <div class="task-content">
+                                <div class="d-flex align-items-start mb-2">
+                                    <input type="checkbox" class="task-checkbox me-2 mt-1" data-task-id="@task.Id" @(task.IsCompleted ? "checked" : "") />
+                                    <div class="flex-grow-1">
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <strong class="task-title @(task.IsCompleted ? "text-decoration-line-through text-muted" : "")">@task.Title</strong>
+                                            <div class="task-actions">
+                                                <button type="button" class="btn btn-sm btn-outline-primary ai-assist-btn" title="Assist with AI" onclick="openAIChatForTask(@task.Id, '@JavaScriptEncoder.Default.Encode(task.Title)')">
+                                                    <i class="bi bi-stars"></i>
+                                                </button>
+                                                <a asp-page="./Edit" asp-route-id="@task.Id" class="btn btn-sm btn-outline-secondary" title="Edit">
+                                                    <i class="bi bi-pencil"></i>
+                                                </a>
+                                                <a asp-page="./Delete" asp-route-id="@task.Id" class="btn btn-sm btn-outline-danger" title="Delete">
+                                                    <i class="bi bi-trash"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        @if (!string.IsNullOrEmpty(task.Description))
+                                        {
+                                            <p class="task-description mb-2 @(task.IsCompleted ? "text-muted" : "")">@task.Description</p>
+                                        }
+                                        <div class="task-meta">
+                                            <span class="badge priority-@task.Priority.ToString().ToLower()">@task.Priority</span>
+                                            @if (task.DueDate.HasValue)
+                                            {
+                                                var daysUntilDue = (task.DueDate.Value.Date - DateTime.Now.Date).Days;
+                                                var badgeClass = task.IsCompleted ? "bg-success" : 
+                                                                daysUntilDue < 0 ? "bg-danger" : 
+                                                                daysUntilDue == 0 ? "bg-warning" : 
+                                                                daysUntilDue <= 3 ? "bg-warning text-dark" : "bg-info";
+                                                <span class="badge @badgeClass">
+                                                    <i class="bi bi-calendar-event"></i> 
+                                                    @if (daysUntilDue < 0)
+                                                    {
+                                                        <text>Overdue by @Math.Abs(daysUntilDue) day(s)</text>
+                                                    }
+                                                    else if (daysUntilDue == 0)
+                                                    {
+                                                        <text>Due today</text>
+                                                    }
+                                                    else if (daysUntilDue == 1)
+                                                    {
+                                                        <text>Due tomorrow</text>
+                                                    }
+                                                    else
+                                                    {
+                                                        <text>Due @task.DueDate.Value.ToString("MMM dd, yyyy")</text>
+                                                    }
+                                                </span>
+                                            }
+                                            @if (task.CreatedAt != default)
+                                            {
+                                                <small class="text-muted ms-2">
+                                                    Created @task.CreatedAt.ToString("MMM dd, yyyy")
+                                                </small>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    }
+                </ul>
+            </div>
+
+        <!-- Folders -->
+        <div class="folders-grid">
+            @foreach (var folder in Model.Folders)
+            {
+                <div class="folder-column folder-card" data-folder-id="@folder.Id" style="@(!string.IsNullOrEmpty(folder.ImagePath) ? "--folder-bg-image: url('" + folder.ImagePath + "');" : "--folder-bg-color: " + folder.Color + ";")">
+                    <div class="folder-header">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <h5 class="mb-0">
+                                @if (!string.IsNullOrEmpty(folder.ImagePath))
+                                {
+                                    <img src="@folder.ImagePath" alt="@folder.Name" class="me-2" style="width: 24px; height: 24px; object-fit: cover; border-radius: 4px;" />
+                                }
+                                else
+                                {
+                                    <i class="bi bi-folder-fill"></i>
+                                }
+                                @folder.Name
+                            </h5>
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="badge count-badge">@(folder.Tasks?.Count ?? 0)</span>
+                                <div class="folder-actions">
+                                    <a asp-page="../Folders/Edit" asp-route-id="@folder.Id" class="btn btn-sm btn-light py-0 px-1 opacity-75" title="Edit Folder">
+                                        <i class="bi bi-pencil" style="font-size: 0.8rem;"></i>
+                                    </a>
+                                    <a asp-page="../Folders/Delete" asp-route-id="@folder.Id" class="btn btn-sm btn-light py-0 px-1 opacity-75" title="Delete Folder">
+                                        <i class="bi bi-trash" style="font-size: 0.8rem;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-container"></div>
+                    </div>
+                    <ul class="task-list" id="folder-@folder.Id" data-folder-id="@folder.Id">
+                        @if (folder.Tasks != null && folder.Tasks.Count > 0)
+                        {
+                            @foreach (var task in folder.Tasks)
+                            {
+                                <li class="task-item glass-card @(task.IsCompleted ? "task-completed" : "") @(task.DueDate.HasValue && task.DueDate.Value < DateTime.Now && !task.IsCompleted ? "task-overdue" : "") @(task.DueDate.HasValue && task.DueDate.Value.Date == DateTime.Now.Date && !task.IsCompleted ? "task-due-today" : "")" 
+                                    data-id="@task.Id"
+                                    data-title="@task.Title" 
+                                    data-description="@(task.Description ?? "")"
+                                    data-completed="@(task.IsCompleted.ToString().ToLower())"
+                                    draggable="true"
+                                    ondragstart="handleTaskDragStart(event, @task.Id, '@JavaScriptEncoder.Default.Encode(task.Title)', '@JavaScriptEncoder.Default.Encode(task.Description ?? "")')">
+                                    <div class="task-content">
+                                        <div class="d-flex align-items-start mb-2">
+                                            <input type="checkbox" class="task-checkbox me-2 mt-1" data-task-id="@task.Id" @(task.IsCompleted ? "checked" : "") />
+                                            <div class="flex-grow-1">
+                                                <div class="d-flex justify-content-between align-items-start">
+                                                    <strong class="task-title @(task.IsCompleted ? "text-decoration-line-through text-muted" : "")">@task.Title</strong>
+                                                    <div class="task-actions">
+                                                        <a asp-page="./Edit" asp-route-id="@task.Id" class="btn btn-sm btn-outline-secondary" title="Edit">
+                                                            <i class="bi bi-pencil"></i>
+                                                        </a>
+                                                        <a asp-page="./Delete" asp-route-id="@task.Id" class="btn btn-sm btn-outline-danger" title="Delete">
+                                                            <i class="bi bi-trash"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                @if (!string.IsNullOrEmpty(task.Description))
+                                                {
+                                                    <p class="task-description mb-2 @(task.IsCompleted ? "text-muted" : "")">@task.Description</p>
+                                                }
+                                                <div class="task-meta">
+                                                    <span class="badge priority-@task.Priority.ToString().ToLower()">@task.Priority</span>
+                                                    @if (task.DueDate.HasValue)
+                                                    {
+                                                        var daysUntilDue = (task.DueDate.Value.Date - DateTime.Now.Date).Days;
+                                                        var badgeClass = task.IsCompleted ? "bg-success" : 
+                                                                        daysUntilDue < 0 ? "bg-danger" : 
+                                                                        daysUntilDue == 0 ? "bg-warning" : 
+                                                                        daysUntilDue <= 3 ? "bg-warning text-dark" : "bg-info";
+                                                        <span class="badge @badgeClass">
+                                                            <i class="bi bi-calendar-event"></i> 
+                                                            @if (daysUntilDue < 0)
+                                                            {
+                                                                <text>Overdue by @Math.Abs(daysUntilDue) day(s)</text>
+                                                            }
+                                                            else if (daysUntilDue == 0)
+                                                            {
+                                                                <text>Due today</text>
+                                                            }
+                                                            else if (daysUntilDue == 1)
+                                                            {
+                                                                <text>Due tomorrow</text>
+                                                            }
+                                                            else
+                                                            {
+                                                                <text>Due @task.DueDate.Value.ToString("MMM dd, yyyy")</text>
+                                                            }
+                                                        </span>
+                                                    }
+                                                    @if (task.CreatedAt != default)
+                                                    {
+                                                        <small class="text-muted ms-2">
+                                                            Created @task.CreatedAt.ToString("MMM dd, yyyy")
+                                                        </small>
+                                                    }
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            }
+                        }
+                    </ul>
+                </div>
+            }
+        </div>
+
+        @if ((Model.Folders == null || Model.Folders.Count == 0) && (Model.UnfolderredTasks == null || Model.UnfolderredTasks.Count == 0))
+        {
+            <div class="empty-state text-center py-5">
+                <i class="bi bi-clipboard-x display-1 text-muted"></i>
+                <h4 class="mt-3 text-muted">No tasks yet</h4>
+                <p class="text-muted">Get started by creating your first task or folder!</p>
+                <div class="mt-4">
+                    <a asp-page="./Create" class="btn btn-primary me-2">
+                        <i class="bi bi-plus-circle"></i> Add Task
+                    </a>
+                    <a asp-page="../Folders/Create" class="btn btn-outline-primary">
+                        <i class="bi bi-folder-plus"></i> Add Folder
+                    </a>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<!-- AI Side Panel -->
+<div class="ai-side-panel glass-panel" id="aiSidePanel">
+    <div class="ai-side-header d-flex justify-content-between align-items-center">
+        <h5 class="mb-0 fw-bold"><i class="bi bi-robot text-primary"></i> AI Assistant</h5>
+        <div class="d-flex gap-2">
+            <div class="dropdown">
+                <button class="btn btn-sm btn-outline-primary rounded-pill py-0 px-2" type="button" data-bs-toggle="dropdown" onclick="populateTaskSelector()">
+                    <i class="bi bi-link-45deg"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end shadow border-0 glass-panel" id="taskSelectorMenu" style="max-height: 300px; overflow-y: auto; min-width: 250px;">
+                    <li><h6 class="dropdown-header">Select Task Context</h6></li>
+                    <div id="taskListItems"></div>
+                </ul>
+            </div>
+            <button type="button" class="btn-close" onclick="toggleAISidePanel()"></button>
+        </div>
+    </div>
+    <div class="ai-side-body" id="aiChatBody">
+        <div class="ai-message text-muted text-center mt-5 opacity-50">
+            <i class="bi bi-chat-heart display-4 d-block mb-3"></i>
+            <p>I'm here to help you crush your tasks!</p>
+            <div class="suggested-chips d-flex flex-wrap gap-2 justify-content-center p-3">
+                <button class="btn btn-sm btn-outline-secondary rounded-pill" onclick="sendQuickPrompt('Summarize my pending tasks')">Summarize My Day</button>
+                <button class="btn btn-sm btn-outline-secondary rounded-pill" onclick="sendQuickPrompt('Create an excel sheet of my tasks')">Export to Excel</button>
+            </div>
+        </div>
+    </div>
+        <div class="chat-input-wrapper glass-panel rounded-pill px-3 py-1 d-flex align-items-center">
+            <span class="text-muted pe-2" data-bs-toggle="tooltip" data-bs-html="true" 
+                  title="<b>AI Commands:</b><br/>• <b>Essay/Docs:</b> 'Write an essay...'<br/>• <b>Excel:</b> 'Create a spreadsheet of...'<br/>• <b>Charts:</b> 'Make a bar chart of...'<br/>• <b>Slides:</b> 'Create a presentation on...'<br/>• <b>Search:</b> 'Search for...'<br/>• <b>Email:</b> 'Send email to...' (<i>Setup first</i>)">
+                <i class="bi bi-question-circle"></i>
+            </span>
+            <input type="text" id="aiChatInput" class="form-control border-0 bg-transparent flex-grow-1" placeholder="Ask anything..." 
+                   onkeypress="handleEnter(event)"
+                   ondragover="allowDrop(event)"
+                   ondrop="handleTaskDrop(event)">
+            <button class="btn btn-primary rounded-circle p-2 ms-2 lh-1" type="button" id="aiSendBtn" onclick="sendAIMessage()">
+                <i class="bi bi-arrow-up"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<style>
+    .ai-side-panel {
+        position: fixed;
+        right: -400px;
+        top: 0;
+        bottom: 0;
+        width: 400px;
+        z-index: 1050;
+        display: flex;
+        flex-direction: column;
+        transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        border-left: 1px solid var(--glass-border);
+    }
+    .ai-side-panel.active {
+        right: 0;
+    }
+    .ai-side-header {
+        padding: 1.5rem;
+        border-bottom: 1px solid var(--glass-border);
+    }
+    .ai-side-body {
+        flex-grow: 1;
+        overflow-y: auto;
+        padding: 1.5rem;
+    }
+    .chat-bubble {
+        max-width: 85%;
+        margin-bottom: 1rem;
+        padding: 0.85rem 1.15rem;
+        border-radius: 1.25rem;
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+    .chat-bubble.user {
+        background: var(--primary-color);
+        color: white;
+        margin-left: auto;
+        border-bottom-right-radius: 0.25rem;
+        box-shadow: 0 4px 12px rgba(var(--primary-color-rgb), 0.3);
+    }
+    .chat-bubble.ai {
+        background: var(--glass-bg);
+        backdrop-filter: blur(4px);
+        border: 1px solid var(--glass-border);
+        color: var(--text-color);
+        margin-right: auto;
+        border-bottom-left-radius: 0.25rem;
+    }
+    .task-actions .ai-assist-btn {
+        opacity: 0;
+        transition: opacity 0.2s;
+    }
+    .task-item:hover .task-actions .ai-assist-btn {
+        opacity: 1;
+    }
+    .dark-filter-bg { background-color: rgba(0,0,0,0.05) !important; }
+    [data-theme="dark"] .dark-filter-bg { background-color: rgba(255,255,255,0.05) !important; }
+    .count-badge { font-size: 0.75rem; vertical-align: middle; }
+</style>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+            
+            // Initialize Sortable for all task lists
+            document.querySelectorAll('.task-list').forEach(list => {
+                new Sortable(list, {
+                    group: 'tasks',
+                    draggable: '.task-item',
+                    animation: 150,
+                    ghostClass: 'sortable-ghost',
+                    chosenClass: 'sortable-chosen',
+                    dragClass: 'sortable-drag',
+                    onEnd: function(evt) {
+                        let newFolderId = null;
+                        const folderIdAttr = evt.to.dataset.folderId;
+                        if (folderIdAttr && folderIdAttr !== 'null' && folderIdAttr !== '') {
+                            newFolderId = parseInt(folderIdAttr);
+                        }
+                        
+                        // Get all task IDs in their new order from the DOM
+                        const taskIds = Array.from(evt.to.children)
+                            .map(item => parseInt(item.dataset.id))
+                            .filter(id => !isNaN(id));
+                        
+                        fetch('@Url.Page("Board")?handler=UpdateTask', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                                'RequestVerificationToken': token
+                            },
+                            body: JSON.stringify({
+                                folderId: newFolderId,
+                                taskIds: taskIds
+                            })
+                        }).then(response => {
+                            if (!response.ok) {
+                                console.error('Failed to update task');
+                                showNotification('Failed to move task. Reverting...', 'danger');
+                                // Revert the move if failed
+                                setTimeout(() => location.reload(), 1000); 
+                            } else {
+                                // Success: Update counts if moved between folders
+                                if (evt.from !== evt.to) {
+                                    const updateCount = (list, change) => {
+                                        const badge = list.closest('.folder-column').querySelector('.folder-header .badge');
+                                        if (badge) {
+                                            const currentCount = parseInt(badge.textContent);
+                                            badge.textContent = Math.max(0, currentCount + change);
+                                        }
+                                    };
+                                    
+                                    updateCount(evt.from, -1);
+                                    updateCount(evt.to, 1);
+                                }
+                            }
+                        }).catch(error => {
+                            console.error('Error:', error);
+                            showNotification('An error occurred. check connection.', 'danger');
+                            setTimeout(() => location.reload(), 1000); 
+                        });
+                    }
+                });
+            });
+
+            // Handle task checkbox toggles
+            document.querySelectorAll('.task-checkbox').forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    const taskId = parseInt(this.dataset.taskId);
+                    
+                    fetch('@Url.Page("Board")?handler=ToggleComplete', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'RequestVerificationToken': token
+                        },
+                        body: JSON.stringify({ taskId: taskId })
+                    }).then(response => {
+                        if (response.ok) {
+                            return response.json();
+                        }
+                        throw new Error('Network response was not ok');
+                    }).then(data => {
+                        if (data.success) {
+                            // Update UI locally without reload
+                            const taskItem = document.querySelector(`.task-item[data-id="${taskId}"]`);
+                            const title = taskItem.querySelector('.task-title');
+                            const desc = taskItem.querySelector('.task-description');
+                            
+                            if (data.isCompleted) {
+                                taskItem.classList.add('task-completed');
+                                title.classList.add('text-decoration-line-through', 'text-muted');
+                                if (desc) desc.classList.add('text-muted');
+                            } else {
+                                taskItem.classList.remove('task-completed');
+                                title.classList.remove('text-decoration-line-through', 'text-muted');
+                                if (desc) desc.classList.remove('text-muted');
+                            }
+
+                            // If filtering is active, we might need to hide the item or reload
+                            // But for "All Tasks" view, this is perfect.
+                            const urlParams = new URLSearchParams(window.location.search);
+                            const filter = urlParams.get('filter');
+                            if (filter && filter !== 'all') {
+                                location.reload(); // Only reload if filtering makes this item disappear
+                            }
+                        }
+                    }).catch(error => {
+                        console.error('Error:', error);
+                        this.checked = !this.checked; // Revert checkbox
+                    });
+                });
+            });
+
+            // Dynamic Greeting
+            updateGreeting();
+            
+            // Initial Progress Bars
+            updateAllProgressBars();
+
+            // Check for tasks due soon and show notifications
+            checkDueDates();
+            setInterval(checkDueDates, 60000); // Check every minute
+        });
+
+        function updateGreeting() {
+            const greetingEl = document.getElementById('dynamic-greeting');
+            const hour = new Date().getHours();
+            let text = "Welcome Back";
+            if (hour < 12) text = "Good Morning ☀️";
+            else if (hour < 18) text = "Good Afternoon ☕";
+            else text = "Good Evening 🌙";
+            greetingEl.textContent = text;
+        }
+
+        function updateAllProgressBars() {
+            document.querySelectorAll('.folder-card').forEach(folder => {
+                const tasks = folder.querySelectorAll('.task-item');
+                const completed = Array.from(tasks).filter(t => t.dataset.completed === 'true').length;
+                const total = tasks.length;
+                const percent = total === 0 ? 0 : (completed / total) * 100;
+                
+                const bar = folder.querySelector('.progress-bar-container');
+                if (bar) bar.style.width = percent + '%';
+            });
+        }
+
+        function checkDueDates() {
+            const tasks = document.querySelectorAll('.task-item');
+            const now = new Date();
+            const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
+            tasks.forEach(taskItem => {
+                const dueDateBadge = taskItem.querySelector('.badge');
+                if (!dueDateBadge || !dueDateBadge.textContent.includes('Due')) return;
+
+                const isCompleted = taskItem.classList.contains('task-completed');
+                if (isCompleted) return;
+
+                const dueDateText = dueDateBadge.textContent;
+                if (dueDateText.includes('Overdue')) {
+                    showNotification('Task "' + taskItem.querySelector('.task-title').textContent.trim() + '" is overdue!', 'danger');
+                } else if (dueDateText.includes('Due today')) {
+                    showNotification('Task "' + taskItem.querySelector('.task-title').textContent.trim() + '" is due today!', 'warning');
+                } else if (dueDateText.includes('Due tomorrow')) {
+                    showNotification('Task "' + taskItem.querySelector('.task-title').textContent.trim() + '" is due tomorrow!', 'info');
+                }
+            });
+        }
+
+        function showNotification(message, type) {
+            const notificationKey = 'notification_' + btoa(message).substring(0, 20);
+            if (sessionStorage.getItem(notificationKey)) return;
+            sessionStorage.setItem(notificationKey, 'shown');
+            
+            const notification = document.createElement('div');
+            notification.className = `alert alert-${type} alert-dismissible fade show position-fixed top-0 end-0 m-3`;
+            notification.style.zIndex = '9999';
+            notification.style.minWidth = '300px';
+            notification.innerHTML = `
+                ${message}
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            `;
+            document.body.appendChild(notification);
+
+            setTimeout(() => {
+                notification.remove();
+            }, 5000);
+        }
+
+        // AI Chat Logic
+        let aiChatModal;
+        let currentFocusedTaskId = null;
+        let conversationHistory = [];
+
+        function handleTaskDragStart(e, id, title, desc) {
+            const data = { id, title, desc };
+            e.dataTransfer.setData("application/json", JSON.stringify(data));
+            e.dataTransfer.effectAllowed = "copyMove";
+        }
+
+        function allowDrop(e) {
+            e.preventDefault();
+            e.target.style.backgroundColor = 'rgba(var(--primary-color-rgb), 0.1)';
+            e.target.style.borderColor = 'var(--primary-color)';
+        }
+
+        function handleTaskDrop(e) {
+            e.preventDefault();
+            e.target.style.backgroundColor = '';
+            e.target.style.borderColor = '';
+            
+            try {
+                const data = JSON.parse(e.dataTransfer.getData("application/json"));
+                if (data && data.title) {
+                    const input = document.getElementById('aiChatInput');
+                    const taskName = data.title;
+                    const taskDesc = data.desc || "No description provided";
+                    
+                    input.value = `The task name is ${taskName} and the description is ${taskDesc}`;
+                    currentFocusedTaskId = data.id;
+                    input.focus();
+                }
+            } catch (err) {
+                console.error("Failed to parse drop data", err);
+            }
+        }
+
+        function populateTaskSelector() {
+            const container = document.getElementById('taskListItems');
+            container.innerHTML = '';
+            
+            const tasks = document.querySelectorAll('.task-item');
+            if (tasks.length === 0) {
+                container.innerHTML = '<li class="dropdown-item text-muted">No tasks found</li>';
+                return;
+            }
+
+            tasks.forEach(task => {
+                const id = task.dataset.id;
+                const title = task.dataset.title;
+                const desc = task.dataset.description;
+                
+                const li = document.createElement('li');
+                li.innerHTML = `<a class="dropdown-item d-flex justify-content-between align-items-center" href="#" onclick="selectTaskForAI(${id}, '${title.replace(/'/g, "\\'")}', '${desc.replace(/'/g, "\\'")}')">
+                                    <span class="text-truncate" style="max-width: 180px;">${title}</span>
+                                    <i class="bi bi-plus-circle-fill text-primary"></i>
+                                 </a>`;
+                container.appendChild(li);
+            });
+        }
+
+        function selectTaskForAI(id, title, desc) {
+            const input = document.getElementById('aiChatInput');
+            const taskDesc = desc || "No description provided";
+            input.value = `The task name is ${title} and the description is ${taskDesc}`;
+            currentFocusedTaskId = id;
+            input.focus();
+        }
+
+        function openAIChat() {
+            currentFocusedTaskId = null;
+            showModal();
+        }
+
+        function openAIChatForTask(id, title) {
+            currentFocusedTaskId = id;
+            showModal();
+            const input = document.getElementById('aiChatInput');
+            input.placeholder = `Ask about "${title}"...`;
+            input.focus();
+        }
+
+        function showModal() {
+            if (!aiChatModal) {
+                aiChatModal = new bootstrap.Modal(document.getElementById('aiChatModal'));
+            }
+            aiChatModal.show();
+        }
+
+        function handleEnter(e) {
+            if (e.key === 'Enter') sendAIMessage();
+        }
+
+        // AI Side Panel Logic
+        function toggleAISidePanel() {
+            const panel = document.getElementById('aiSidePanel');
+            panel.classList.toggle('active');
+            if (panel.classList.contains('active')) {
+                document.getElementById('aiChatInput').focus();
+            }
+        }
+
+        function sendQuickPrompt(msg) {
+            document.getElementById('aiChatInput').value = msg;
+            sendAIMessage();
+        }
+
+        function sendAIMessage() {
+            const input = document.getElementById('aiChatInput');
+            const message = input.value.trim();
+            if (!message) return;
+
+            appendMessage(message, 'user');
+            input.value = '';
+
+            // Remove default message if present
+            const defaultMsg = document.querySelector('.ai-message');
+            if (defaultMsg) defaultMsg.remove();
+
+            // Show typing indicator
+            const typingId = 'typing-' + Date.now();
+            appendTypedMessage('<div class="spinner-grow spinner-grow-sm text-primary" role="status"></div>', 'ai', typingId);
+
+            const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+
+            fetch('@Url.Page("Board")?handler=AskAI', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'RequestVerificationToken': token
+                },
+                body: JSON.stringify({ 
+                    prompt: message,
+                    focusedTaskId: currentFocusedTaskId,
+                    history: conversationHistory
+                })
+            }).then(response => {
+                if (!response.ok) throw new Error('Network response was not ok');
+                return response.json();
+            }).then(data => {
+                const tEl = document.getElementById(typingId);
+                if (tEl) tEl.remove();
+
+                if (data.success) {
+                    appendMessage(formatAIResponse(data.reply), 'ai');
+                    
+                    // Update history
+                    conversationHistory.push({ role: 'user', content: message });
+                    conversationHistory.push({ role: 'assistant', content: data.reply });
+                    
+                    if (conversationHistory.length > 20) conversationHistory = conversationHistory.slice(-20);
+                } else {
+                    appendMessage('Something went wrong. Please try again.', 'ai');
+                }
+            }).catch(error => {
+                console.error('Error:', error);
+                const typingEl = document.getElementById(typingId);
+                if (typingEl) typingEl.remove();
+                appendMessage('Error: Could not reach AI service.', 'ai');
+            });
+        }
+
+        function appendMessage(htmlContent, sender) {
+            const body = document.getElementById('aiChatBody');
+            const div = document.createElement('div');
+            div.className = `chat-bubble ${sender} shadow-sm`;
+            div.innerHTML = htmlContent;
+            body.appendChild(div);
+            body.scrollTop = body.scrollHeight;
+        }
+
+        function appendTypedMessage(htmlContent, sender, id) {
+            const body = document.getElementById('aiChatBody');
+            const div = document.createElement('div');
+            div.className = `chat-bubble ${sender} shadow-sm`;
+            div.id = id;
+            div.innerHTML = htmlContent;
+            body.appendChild(div);
+            body.scrollTop = body.scrollHeight;
+        }
+
+        function formatAIResponse(text) {
+            // Simple formatter to handle newlines and bullet points
+            return text.replace(/\n/g, '<br>')
+                       .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') // Bold
+                       .replace(/- (.*?)(<br>|$)/g, '• $1$2'); // Bullets
+        }
+    </script>
+}

@@ -1,0 +1,18 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center py-5">
+    <h1 class="display-4">Welcome to TaskManager</h1>
+    <p class="lead">Organize your tasks and stay productive!</p>
+    
+    <div class="mt-4 d-flex justify-content-center gap-3">
+        <a asp-page="/Tasks/Board" class="btn btn-primary btn-lg">Get Started</a>
+        @if (!User.Identity?.IsAuthenticated ?? true)
+        {
+            <a asp-area="Identity" asp-page="/Account/Login" class="btn btn-outline-secondary btn-lg">Log In</a>
+        }
+    </div>
+</div>

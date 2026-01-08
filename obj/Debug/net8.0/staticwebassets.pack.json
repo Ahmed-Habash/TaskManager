@@ -1,0 +1,337 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TaskManager.bundle.scp.css",
+      "PackagePath": "staticwebassets\\TaskManager.zjkr07rejo.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\00891ad0-48e2-4c37-8a51-c6d33b99528b.png",
+      "PackagePath": "staticwebassets\\uploads\\folders\\00891ad0-48e2-4c37-8a51-c6d33b99528b.png"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\10e3862c-75e2-4ca4-9244-dccb9351f4e1.png",
+      "PackagePath": "staticwebassets\\uploads\\folders\\10e3862c-75e2-4ca4-9244-dccb9351f4e1.png"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\2430c607-a0bc-4268-a1ef-18bd6248efac.jpg",
+      "PackagePath": "staticwebassets\\uploads\\folders\\2430c607-a0bc-4268-a1ef-18bd6248efac.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\2619bc7b-d599-46e7-bd30-6df5ed501a56.jpg",
+      "PackagePath": "staticwebassets\\uploads\\folders\\2619bc7b-d599-46e7-bd30-6df5ed501a56.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\33f613ec-feb5-4fe1-9409-2dd3c324126e.jpg",
+      "PackagePath": "staticwebassets\\uploads\\folders\\33f613ec-feb5-4fe1-9409-2dd3c324126e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\489d4d09-d1c2-4c65-8a7e-158de1ec827a.jpg",
+      "PackagePath": "staticwebassets\\uploads\\folders\\489d4d09-d1c2-4c65-8a7e-158de1ec827a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\6b1ebe2a-a631-4321-953c-816ddd85cca4.png",
+      "PackagePath": "staticwebassets\\uploads\\folders\\6b1ebe2a-a631-4321-953c-816ddd85cca4.png"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\80bd0b11-0fec-4f39-9c29-91de0f53cdfb.jpg",
+      "PackagePath": "staticwebassets\\uploads\\folders\\80bd0b11-0fec-4f39-9c29-91de0f53cdfb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\9094bc2c-c0cb-494a-b581-6a58b5d28cbe.jpg",
+      "PackagePath": "staticwebassets\\uploads\\folders\\9094bc2c-c0cb-494a-b581-6a58b5d28cbe.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\9ecb886f-99f8-4533-99a5-f868db50ab26.jpg",
+      "PackagePath": "staticwebassets\\uploads\\folders\\9ecb886f-99f8-4533-99a5-f868db50ab26.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\9f81f12e-56c2-4ab4-9141-be26ed6f1036.png",
+      "PackagePath": "staticwebassets\\uploads\\folders\\9f81f12e-56c2-4ab4-9141-be26ed6f1036.png"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\b4fcc642-0406-47c9-a6cb-a97f41c9a480.jpg",
+      "PackagePath": "staticwebassets\\uploads\\folders\\b4fcc642-0406-47c9-a6cb-a97f41c9a480.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\dd029b24-ee79-43f5-ab33-04e96f641acd.jpg",
+      "PackagePath": "staticwebassets\\uploads\\folders\\dd029b24-ee79-43f5-ab33-04e96f641acd.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\df165d26-3d14-41c9-9088-068670bf6e04.jpg",
+      "PackagePath": "staticwebassets\\uploads\\folders\\df165d26-3d14-41c9-9088-068670bf6e04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\dfd7d4d8-2055-4174-b3c2-11476fb27a77.jpg",
+      "PackagePath": "staticwebassets\\uploads\\folders\\dfd7d4d8-2055-4174-b3c2-11476fb27a77.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\f0fb9cc1-ea1a-44aa-8f54-a4d21da44407.jpg",
+      "PackagePath": "staticwebassets\\uploads\\folders\\f0fb9cc1-ea1a-44aa-8f54-a4d21da44407.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\fb8e3a91-f576-44c9-8da6-7144f9d252e9.png",
+      "PackagePath": "staticwebassets\\uploads\\folders\\fb8e3a91-f576-44c9-8da6-7144f9d252e9.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.TaskManager.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.TaskManager.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.TaskManager.props",
+      "PackagePath": "build\\TaskManager.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.TaskManager.props",
+      "PackagePath": "buildMultiTargeting\\TaskManager.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.TaskManager.props",
+      "PackagePath": "buildTransitive\\TaskManager.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

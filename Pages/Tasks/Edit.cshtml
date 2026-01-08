@@ -1,0 +1,92 @@
+@page
+@model TaskManager.Pages.Tasks.EditModel
+@{
+    ViewData["Title"] = "Edit Task";
+}
+
+<div class="container-fluid py-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-xl-6">
+            <div class="card shadow-sm">
+                <div class="card-header card-header-gradient">
+                    <h4 class="mb-0">Edit Task</h4>
+                </div>
+                <div class="card-body">
+                    <form method="post">
+                        <input type="hidden" asp-for="TaskItem.Id" />
+                        <input type="hidden" asp-for="TaskItem.CreatedAt" />
+                        <input type="hidden" asp-for="TaskItem.Order" />
+                        
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                        
+                        <div class="mb-3">
+                            <label asp-for="TaskItem.Title" class="form-label fw-semibold">Title</label>
+                            <input asp-for="TaskItem.Title" class="form-control" placeholder="Enter task title" />
+                            <span asp-validation-for="TaskItem.Title" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="TaskItem.Description" class="form-label fw-semibold">Description</label>
+                            <textarea asp-for="TaskItem.Description" class="form-control" rows="4" placeholder="Enter task description (optional)"></textarea>
+                            <span asp-validation-for="TaskItem.Description" class="text-danger"></span>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <label asp-for="TaskItem.Priority" class="form-label fw-semibold">Priority</label>
+                                <select asp-for="TaskItem.Priority" class="form-select" asp-items="Html.GetEnumSelectList<TaskManager.Models.TaskPriority>()"></select>
+                                <span asp-validation-for="TaskItem.Priority" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-3 mb-3">
+                                <label asp-for="TaskItem.Category" class="form-label fw-semibold">Category</label>
+                                <select asp-for="TaskItem.Category" class="form-select" asp-items="Html.GetEnumSelectList<TaskManager.Models.TaskCategory>()"></select>
+                                <span asp-validation-for="TaskItem.Category" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-3 mb-3">
+                                <label asp-for="TaskItem.DueDate" class="form-label fw-semibold">Due Date (Optional)</label>
+                                <input type="date" asp-for="TaskItem.DueDate" class="form-control" />
+                                <small class="text-muted">Target completion date</small>
+                                <span asp-validation-for="TaskItem.DueDate" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-3 mb-3">
+                                <label asp-for="TaskItem.IsCompleted" class="form-label fw-semibold">Status</label>
+                                <div class="form-check form-switch mt-2">
+                                    <input asp-for="TaskItem.IsCompleted" class="form-check-input" type="checkbox" />
+                                    <label asp-for="TaskItem.IsCompleted" class="form-check-label">
+                                        @(Model.TaskItem.IsCompleted ? "Completed" : "Pending")
+                                    </label>
+                                </div>
+                                <span asp-validation-for="TaskItem.IsCompleted" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="TaskItem.FolderId" class="form-label fw-semibold">Folder (Optional)</label>
+                                <select asp-for="TaskItem.FolderId" class="form-select" asp-items="Model.Folders">
+                                    <option value="">None</option>
+                                </select>
+                                <span asp-validation-for="TaskItem.FolderId" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex gap-2 justify-content-end">
+                            <a asp-page="./Board" class="btn btn-outline-secondary">Cancel</a>
+                            <button type="submit" class="btn btn-warning">Save Changes</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
