@@ -1126,6 +1126,8 @@ namespace TaskManager.Services
             string? finalPass = null;
             try
             {
+                _logger.LogInformation($"Attempting to send email to {to} with subject '{subject}'");
+
                 // Ensure exports directory exists for debug logging
                 var debugPath = Path.Combine(_environment.WebRootPath, "exports", "debug_email.txt");
                 var debugDir = Path.GetDirectoryName(debugPath);
@@ -1134,7 +1136,11 @@ namespace TaskManager.Services
                 // Fallback to configuration if not provided
                 var smtpServer = _configuration["Email:SmtpServer"] ?? "smtp.gmail.com";
                 var portStr = _configuration["Email:Port"] ?? "587";
-                int.TryParse(portStr, out int port);
+                if (!int.TryParse(portStr, out int port)) 
+                {
+                    port = 587;
+                    _logger.LogWarning($"Failed to parse Email:Port '{portStr}', defaulting to 587.");
+                }
                 
                 var configUser = _configuration["Email:Username"];
                 var configPass = _configuration["Email:Password"];
@@ -1151,7 +1157,7 @@ namespace TaskManager.Services
                         try
                         {
                             var settingsJson = await File.ReadAllTextAsync(settingsPath);
-                            await File.AppendAllTextAsync(debugPath, $"JSON content: {settingsJson}\n");
+                            // Avoid logging sensitive passwords to file if possible, or truncate
                             
                             var settingsNode = JsonNode.Parse(settingsJson);
                             if (settingsNode != null)
@@ -1165,12 +1171,13 @@ namespace TaskManager.Services
                                 if ((string.IsNullOrEmpty(configPass) || configPass == "YOUR_APP_PASSWORD_HERE") && settingsNode["Email:Password"] != null)
                                 {
                                     configPass = settingsNode["Email:Password"]?.GetValue<string>();
-                                    await File.AppendAllTextAsync(debugPath, "Found Password\n");
+                                    await File.AppendAllTextAsync(debugPath, "Found Password (masked)\n");
                                 }
                             }
                         }
                         catch (Exception ex) 
                         { 
+                             _logger.LogError(ex, "Error parsing user_settings.json for email credentials");
                              await File.AppendAllTextAsync(debugPath, $"Error parsing settings: {ex.Message}\n");
                         }
                     }
@@ -1184,19 +1191,23 @@ namespace TaskManager.Services
                 finalUser = !string.IsNullOrEmpty(username) ? username : configUser;
                 finalPass = !string.IsNullOrEmpty(password) ? password : configPass;
                 
-                await File.AppendAllTextAsync(debugPath, $"FinalUser: {finalUser}, To: {to}, Sender: {senderEmail}\n");
+                _logger.LogInformation($"Email Configuration: Server={smtpServer}:{port}, Sender={senderEmail}, Target={to}");
+                await File.AppendAllTextAsync(debugPath, $"FinalUser: {finalUser}, To: {to}, Sender: {senderEmail}, Server: {smtpServer}:{port}\n");
 
                 if (string.IsNullOrEmpty(finalUser) || string.IsNullOrEmpty(finalPass))
                 {
-                   await LogEmailSimulation(to, subject, body, attachmentPath, finalUser, finalPass, "FAILED: No Credentials Provided");
-                   return;
+                   var msg = "FAILED: No Credentials Provided (User or Password missing)";
+                   _logger.LogWarning(msg);
+                   await LogEmailSimulation(to, subject, body, attachmentPath, finalUser, finalPass, msg);
+                   // We must exit or throw here
+                   throw new Exception(msg); 
                 }
-
 
                 using (var client = new System.Net.Mail.SmtpClient(smtpServer, port))
                 {
                     client.EnableSsl = true;
-                    client.Timeout = 30000; // 30 second timeout
+                    // Lower timeout to fail faster (15 seconds)
+                    client.Timeout = 15000; 
                     client.Credentials = new System.Net.NetworkCredential(finalUser, finalPass);
 
                     using (var mailMessage = new System.Net.Mail.MailMessage())
@@ -1205,28 +1216,37 @@ namespace TaskManager.Services
                         mailMessage.To.Add(to);
                         mailMessage.Subject = subject;
                         mailMessage.Body = body;
+                        mailMessage.IsBodyHtml = true; 
                         
                         if (!string.IsNullOrEmpty(attachmentPath))
                         {
                             var fullPath = attachmentPath;
                             if (!File.Exists(fullPath))
                             {
-                                fullPath = Path.Combine(_environment.WebRootPath, "exports", attachmentPath);
+                                var exportsPath = Path.Combine(_environment.WebRootPath, "exports", attachmentPath);
+                                if (File.Exists(exportsPath)) fullPath = exportsPath;
                             }
 
                             if (File.Exists(fullPath))
                             {
                                 mailMessage.Attachments.Add(new System.Net.Mail.Attachment(fullPath));
                             }
+                            else
+                            {
+                                _logger.LogWarning($"Attachment not found: {attachmentPath}");
+                            }
                         }
 
+                        _logger.LogInformation("Sending email...");
                         await client.SendMailAsync(mailMessage);
+                        _logger.LogInformation("Email sent successfully.");
                         await LogEmailSimulation(to, subject, body, attachmentPath, finalUser, finalPass, "SUCCESS: Sent via SMTP");
                     }
                 }
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex, $"Failed to send email to {to}");
                 await LogEmailSimulation(to, subject, body, attachmentPath, finalUser, finalPass, $"ERROR: {ex.Message}");
                 throw new Exception($"Failed to send email: {ex.Message}");
             }
