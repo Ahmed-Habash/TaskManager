@@ -28,7 +28,7 @@ namespace TaskManager.Pages
         {
         }
 
-        public async Task OnPostAsync(string toEmail)
+        public async Task OnPostAsync(string toEmail, string? customUser, string? customPass)
         {
             var sb = new StringBuilder();
             sb.AppendLine($"--- Starting Email Diagnostic at {DateTime.Now} ---");
@@ -40,11 +40,14 @@ namespace TaskManager.Pages
                 var portStr = _configuration["Email:Port"] ?? "465";
                 int.TryParse(portStr, out int port);
                 var user = _configuration["Email:Username"];
+                var sendGridKey = _configuration["Email:SendGridApiKey"];
                 
                 sb.AppendLine($"Configuration:");
                 sb.AppendLine($"  Server: {smtpServer}");
                 sb.AppendLine($"  Configured Port: {port}");
-                sb.AppendLine($"  User Configured (appsettings/env): {!string.IsNullOrEmpty(user)}");
+                sb.AppendLine($"  System User Configured: {!string.IsNullOrEmpty(user)}");
+                sb.AppendLine($"  SendGrid API Key Configured: {!string.IsNullOrEmpty(sendGridKey)}");
+                sb.AppendLine($"  Using Custom Credentials: {!string.IsNullOrEmpty(customUser)}");
                 
                 // 2. Multi-Port Connectivity Test
                 int[] portsToTest = { 465, 587, 2525 };
@@ -102,7 +105,7 @@ namespace TaskManager.Pages
                     sb.AppendLine($"\nAttempting Full SendEmailAsync to {toEmail}...");
                     try
                     {
-                        await _taskService.SendEmailAsync(toEmail, "Test Email from Diagnostics", "This is a test email to verify deployment connectivity.");
+                        await _taskService.SendEmailAsync(toEmail, "Test Email from Diagnostics", "This is a test email to verify deployment connectivity.", null, customUser, customPass);
                         sb.AppendLine("  SUCCESS: SendEmailAsync completed without exception.");
                     }
                     catch (Exception ex)

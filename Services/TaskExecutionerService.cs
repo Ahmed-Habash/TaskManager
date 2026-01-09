@@ -1126,8 +1126,26 @@ namespace TaskManager.Services
             string? finalPass = null;
             try
             {
-                _logger.LogInformation($"Attempting to send email to {to} with subject '{subject}' via MailKit");
+                _logger.LogInformation($"Attempting to send email to {to} with subject '{subject}'");
 
+                // Check for SendGrid API Key (HTTP Fallback)
+                var sendGridApiKey = _configuration["Email:SendGridApiKey"];
+                var senderEmail = _configuration["Email:SenderEmail"];
+                var senderName = _configuration["Email:SenderName"] ?? "TaskManager AI";
+
+                // Use SendGrid ONLY if NO specific username/password was passed in
+                if (!string.IsNullOrEmpty(sendGridApiKey) && string.IsNullOrEmpty(username) && string.IsNullOrEmpty(password))
+                {
+                    _logger.LogInformation("No dynamic credentials provided. Using SendGrid HTTP API fallback.");
+                    await SendViaSendGridHttpAsync(sendGridApiKey, to, subject, body, senderEmail, senderName, attachmentPath);
+                    await LogEmailSimulation(to, subject, body, attachmentPath, "SendGridAPI", "****", "SUCCESS: Sent via SendGrid HTTP");
+                    return;
+                }
+
+                // --- Standard SMTP Logic (MailKit) ---
+                // This will be used if: 
+                // 1. Specific username/password were passed (Dynamic)
+                // 2. OR SendGrid is not configured (Default SMTP)
                 // Ensure exports directory exists for debug logging
                 var debugPath = Path.Combine(_environment.WebRootPath, "exports", "debug_email.txt");
                 var debugDir = Path.GetDirectoryName(debugPath);
@@ -1135,7 +1153,7 @@ namespace TaskManager.Services
                 
                 // Fallback to configuration if not provided
                 var smtpServer = _configuration["Email:SmtpServer"] ?? "smtp.gmail.com";
-                var portStr = _configuration["Email:Port"] ?? "465"; // Default to 465 now as it's more reliable for SSL
+                var portStr = _configuration["Email:Port"] ?? "465"; 
                 if (!int.TryParse(portStr, out int port)) 
                 {
                     port = 465;
@@ -1150,8 +1168,6 @@ namespace TaskManager.Services
                 if (string.IsNullOrEmpty(configUser) || string.IsNullOrEmpty(configPass) || isPlaceholder)
                 {
                     var settingsPath = Path.Combine(_environment.ContentRootPath, "user_settings.json");
-                    await File.AppendAllTextAsync(debugPath, $"[{DateTime.Now}] Checking settings at {settingsPath}\n");
-                    
                     if (File.Exists(settingsPath))
                     {
                         try
@@ -1163,34 +1179,26 @@ namespace TaskManager.Services
                                 if ((string.IsNullOrEmpty(configUser) || configUser == "YOUR_EMAIL@gmail.com") && settingsNode["Email:Username"] != null) 
                                 {
                                     configUser = settingsNode["Email:Username"]?.GetValue<string>();
-                                    await File.AppendAllTextAsync(debugPath, $"Found Username: {configUser}\n");
                                 }
-                                
                                 if ((string.IsNullOrEmpty(configPass) || configPass == "YOUR_APP_PASSWORD_HERE") && settingsNode["Email:Password"] != null)
                                 {
                                     configPass = settingsNode["Email:Password"]?.GetValue<string>();
-                                    await File.AppendAllTextAsync(debugPath, "Found Password (masked)\n");
                                 }
                             }
                         }
                         catch (Exception ex) 
                         { 
                              _logger.LogError(ex, "Error parsing user_settings.json for email credentials");
-                             await File.AppendAllTextAsync(debugPath, $"Error parsing settings: {ex.Message}\n");
                         }
                     }
                 }
 
-                var senderEmail = _configuration["Email:SenderEmail"];
                 if (string.IsNullOrEmpty(senderEmail)) senderEmail = configUser;
                 
-                var senderName = _configuration["Email:SenderName"] ?? "TaskManager AI";
-
                 finalUser = !string.IsNullOrEmpty(username) ? username : configUser;
                 finalPass = !string.IsNullOrEmpty(password) ? password : configPass;
                 
                 _logger.LogInformation($"Email Configuration: Server={smtpServer}:{port}, Sender={senderEmail}, Target={to}");
-                await File.AppendAllTextAsync(debugPath, $"FinalUser: {finalUser}, To: {to}, Sender: {senderEmail}, Server: {smtpServer}:{port}\n");
 
                 if (string.IsNullOrEmpty(finalUser) || string.IsNullOrEmpty(finalPass))
                 {
@@ -1222,34 +1230,21 @@ namespace TaskManager.Services
                         {
                             builder.Attachments.Add(fullPath);
                         }
-                        else
-                        {
-                            _logger.LogWarning($"Attachment not found: {attachmentPath}");
-                        }
                     }
 
                     message.Body = builder.ToMessageBody();
 
                     using (var client = new MailKit.Net.Smtp.SmtpClient())
                     {
-                        // Accept all SSL certificates (dangerous in production but solves many hosting issues)
                         client.ServerCertificateValidationCallback = (s, c, h, e) => true;
-
-                        _logger.LogInformation($"Connecting to {smtpServer}:{port}...");
-                        
-                        // Use Implicit SSL for 465, otherwise StartTls for 587/25
                         var options = port == 465 ? MailKit.Security.SecureSocketOptions.SslOnConnect : MailKit.Security.SecureSocketOptions.StartTls;
                         
                         await client.ConnectAsync(smtpServer, port, options);
-                        _logger.LogInformation("Connected. Authenticating...");
-
                         await client.AuthenticateAsync(finalUser, finalPass);
-                        _logger.LogInformation("Authenticated. Sending...");
-
                         await client.SendAsync(message);
                         await client.DisconnectAsync(true);
 
-                        _logger.LogInformation("Email sent successfully.");
+                        _logger.LogInformation("Email sent successfully via MailKit.");
                         await LogEmailSimulation(to, subject, body, attachmentPath, finalUser, finalPass, "SUCCESS: Sent via MailKit");
                     }
                 }
@@ -1259,6 +1254,32 @@ namespace TaskManager.Services
                 _logger.LogError(ex, $"Failed to send email to {to}");
                 await LogEmailSimulation(to, subject, body, attachmentPath, finalUser, finalPass, $"ERROR: {ex.Message}");
                 throw new Exception($"Failed to send email: {ex.Message}");
+            }
+        }
+
+        private async Task SendViaSendGridHttpAsync(string apiKey, string to, string subject, string body, string? senderEmail, string senderName, string? attachmentPath)
+        {
+            using (var client = new HttpClient())
+            {
+                client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", apiKey);
+
+                var payload = new
+                {
+                    personalizations = new[] { new { to = new[] { new { email = to } } } },
+                    from = new { email = !string.IsNullOrEmpty(senderEmail) ? senderEmail : "no-reply@taskmanager.com", name = senderName },
+                    subject = subject,
+                    content = new[] { new { type = "text/html", value = body } }
+                };
+
+                var json = JsonSerializer.Serialize(payload);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+                var response = await client.PostAsync("https://api.sendgrid.com/v3/mail/send", content);
+                if (!response.IsSuccessStatusCode)
+                {
+                    var error = await response.Content.ReadAsStringAsync();
+                    throw new Exception($"SendGrid API Status: {response.StatusCode}, Details: {error}");
+                }
             }
         }
 

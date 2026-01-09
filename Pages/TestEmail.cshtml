@@ -10,9 +10,20 @@
 
     <div class="card p-4 mb-4">
         <form method="post">
-            <div class="mb-3">
-                <label class="form-label">Recipient Email</label>
-                <input type="email" name="toEmail" class="form-control" required placeholder="name@example.com" />
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Recipient Email</label>
+                    <input type="email" name="toEmail" class="form-control" required placeholder="recipient@example.com" />
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Custom Sender (Optional)</label>
+                    <input type="text" name="customUser" class="form-control" placeholder="your-email@gmail.com" />
+                </div>
+                <div class="col-md-12 mb-3">
+                    <label class="form-label">App Password / API Key (Optional)</label>
+                    <input type="password" name="customPass" class="form-control" placeholder="Only if testing specific account" />
+                    <small class="text-muted">If left blank, it uses the server's configured credentials.</small>
+                </div>
             </div>
             <button type="submit" class="btn btn-primary">Test Email Send</button>
         </form>
