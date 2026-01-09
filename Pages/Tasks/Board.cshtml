@@ -645,7 +645,10 @@
         }
 
         function handleEnter(e) {
-            if (e.key === 'Enter') sendAIMessage();
+            if (e.key === 'Enter' && e.shiftKey) {
+                e.preventDefault();
+                sendAIMessage();
+            }
         }
 
         // AI Side Panel Logic
