@@ -41,13 +41,14 @@ namespace TaskManager.Pages
                 int.TryParse(portStr, out int port);
                 var user = _configuration["Email:Username"];
                 var sendGridKey = _configuration["Email:SendGridApiKey"];
-                
+                var maskedSendGrid = string.IsNullOrEmpty(sendGridKey) ? "Not Set" : (sendGridKey.Length > 6 ? $"{sendGridKey.Substring(0, 4)}... (Check for spaces!)" : "****");
+
                 sb.AppendLine($"Configuration:");
                 sb.AppendLine($"  Server: {smtpServer}");
                 sb.AppendLine($"  Configured Port: {port}");
-                sb.AppendLine($"  System User Configured: {!string.IsNullOrEmpty(user)}");
-                sb.AppendLine($"  SendGrid API Key Configured: {!string.IsNullOrEmpty(sendGridKey)}");
-                sb.AppendLine($"  Using Custom Credentials: {!string.IsNullOrEmpty(customUser)}");
+                sb.AppendLine($"  Default Account (appsettings/env): {(!string.IsNullOrEmpty(user) ? user : "None")}");
+                sb.AppendLine($"  SendGrid API Key Found: {maskedSendGrid}");
+                sb.AppendLine($"  Using Custom Credentials at Runtime: {!string.IsNullOrEmpty(customUser)}");
                 
                 // 2. Multi-Port Connectivity Test
                 int[] portsToTest = { 465, 587, 2525 };

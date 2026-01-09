@@ -1127,6 +1127,7 @@ namespace TaskManager.Services
             try
             {
                 _logger.LogInformation($"Attempting to send email to {to} with subject '{subject}'");
+                _logger.LogInformation($"Provided dynamic credentials: {!string.IsNullOrEmpty(username)} (User: {username})");
 
                 // Check for SendGrid API Key (HTTP Fallback)
                 var sendGridApiKey = _configuration["Email:SendGridApiKey"];
@@ -1136,10 +1137,18 @@ namespace TaskManager.Services
                 // Use SendGrid ONLY if NO specific username/password was passed in
                 if (!string.IsNullOrEmpty(sendGridApiKey) && string.IsNullOrEmpty(username) && string.IsNullOrEmpty(password))
                 {
-                    _logger.LogInformation("No dynamic credentials provided. Using SendGrid HTTP API fallback.");
+                    _logger.LogInformation("No dynamic credentials provided. Defaulting to SendGrid HTTP API fallback.");
+                    var maskedKey = string.IsNullOrEmpty(sendGridApiKey) ? "none" : (sendGridApiKey.Length > 8 ? sendGridApiKey.Substring(0, 4) + "..." + sendGridApiKey.Substring(sendGridApiKey.Length - 4) : "****");
+                    _logger.LogInformation($"Using SendGrid API Key: {maskedKey}");
+                    
                     await SendViaSendGridHttpAsync(sendGridApiKey, to, subject, body, senderEmail, senderName, attachmentPath);
                     await LogEmailSimulation(to, subject, body, attachmentPath, "SendGridAPI", "****", "SUCCESS: Sent via SendGrid HTTP");
                     return;
+                }
+
+                if (!string.IsNullOrEmpty(username))
+                {
+                    _logger.LogInformation($"Dynamic credentials found for {username}. Bypassing SendGrid and attempting SMTP...");
                 }
 
                 // --- Standard SMTP Logic (MailKit) ---
