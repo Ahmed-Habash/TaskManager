@@ -818,7 +818,10 @@ namespace TaskManager.Services
                                             _lastQuotaReset = DateTime.Now;
                                         }
                                         _logger.LogWarning($"Google Image Search failed for '{slideData.Title}': {response.StatusCode} - {errorContent}");
-                                        await File.AppendAllTextAsync("wwwroot/exports/debug_image_search_failure.txt", $"[{DateTime.Now}] Slide: {slideData.Title} | Keyword: {slideImgKeyword} | Status: {response.StatusCode} | Body: {errorContent}\n");
+                                        var failureLogPath = Path.Combine(_environment.WebRootPath, "exports", "debug_image_search_failure.txt");
+                                        var failureLogDir = Path.GetDirectoryName(failureLogPath);
+                                        if (!Directory.Exists(failureLogDir)) Directory.CreateDirectory(failureLogDir!);
+                                        await File.AppendAllTextAsync(failureLogPath, $"[{DateTime.Now}] Slide: {slideData.Title} | Keyword: {slideImgKeyword} | Status: {response.StatusCode} | Body: {errorContent}\n");
                                     }
                                 }
                             }
@@ -1114,6 +1117,11 @@ namespace TaskManager.Services
             string? finalPass = null;
             try
             {
+                // Ensure exports directory exists for debug logging
+                var debugPath = Path.Combine(_environment.WebRootPath, "exports", "debug_email.txt");
+                var debugDir = Path.GetDirectoryName(debugPath);
+                if (!Directory.Exists(debugDir)) Directory.CreateDirectory(debugDir!);
+                
                 // Fallback to configuration if not provided
                 var smtpServer = _configuration["Email:SmtpServer"] ?? "smtp.gmail.com";
                 var portStr = _configuration["Email:Port"] ?? "587";
@@ -1127,14 +1135,14 @@ namespace TaskManager.Services
                 if (string.IsNullOrEmpty(configUser) || string.IsNullOrEmpty(configPass) || isPlaceholder)
                 {
                     var settingsPath = Path.Combine(_environment.ContentRootPath, "user_settings.json");
-                    await File.AppendAllTextAsync(Path.Combine(_environment.WebRootPath, "exports", "debug_email.txt"), $"[{DateTime.Now}] Checking settings at {settingsPath}\n");
+                    await File.AppendAllTextAsync(debugPath, $"[{DateTime.Now}] Checking settings at {settingsPath}\n");
                     
                     if (File.Exists(settingsPath))
                     {
                         try
                         {
                             var settingsJson = await File.ReadAllTextAsync(settingsPath);
-                            await File.AppendAllTextAsync(Path.Combine(_environment.WebRootPath, "exports", "debug_email.txt"), $"JSON content: {settingsJson}\n");
+                            await File.AppendAllTextAsync(debugPath, $"JSON content: {settingsJson}\n");
                             
                             var settingsNode = JsonNode.Parse(settingsJson);
                             if (settingsNode != null)
@@ -1142,19 +1150,19 @@ namespace TaskManager.Services
                                 if ((string.IsNullOrEmpty(configUser) || configUser == "YOUR_EMAIL@gmail.com") && settingsNode["Email:Username"] != null) 
                                 {
                                     configUser = settingsNode["Email:Username"]?.GetValue<string>();
-                                    await File.AppendAllTextAsync(Path.Combine(_environment.WebRootPath, "exports", "debug_email.txt"), $"Found Username: {configUser}\n");
+                                    await File.AppendAllTextAsync(debugPath, $"Found Username: {configUser}\n");
                                 }
                                 
                                 if ((string.IsNullOrEmpty(configPass) || configPass == "YOUR_APP_PASSWORD_HERE") && settingsNode["Email:Password"] != null)
                                 {
                                     configPass = settingsNode["Email:Password"]?.GetValue<string>();
-                                    await File.AppendAllTextAsync(Path.Combine(_environment.WebRootPath, "exports", "debug_email.txt"), "Found Password\n");
+                                    await File.AppendAllTextAsync(debugPath, "Found Password\n");
                                 }
                             }
                         }
                         catch (Exception ex) 
                         { 
-                             await File.AppendAllTextAsync(Path.Combine(_environment.WebRootPath, "exports", "debug_email.txt"), $"Error parsing settings: {ex.Message}\n");
+                             await File.AppendAllTextAsync(debugPath, $"Error parsing settings: {ex.Message}\n");
                         }
                     }
                 }
@@ -1167,7 +1175,7 @@ namespace TaskManager.Services
                 finalUser = !string.IsNullOrEmpty(username) ? username : configUser;
                 finalPass = !string.IsNullOrEmpty(password) ? password : configPass;
                 
-                await File.AppendAllTextAsync(Path.Combine(_environment.WebRootPath, "exports", "debug_email.txt"), $"FinalUser: {finalUser}, To: {to}, Sender: {senderEmail}\n");
+                await File.AppendAllTextAsync(debugPath, $"FinalUser: {finalUser}, To: {to}, Sender: {senderEmail}\n");
 
                 if (string.IsNullOrEmpty(finalUser) || string.IsNullOrEmpty(finalPass))
                 {

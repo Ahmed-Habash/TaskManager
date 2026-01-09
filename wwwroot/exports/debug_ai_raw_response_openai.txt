@@ -1,15 +1,15 @@
-[1/9/2026 12:59:02 PM] Raw Response:
+[1/9/2026 1:12:17 PM] Raw Response:
 {
-  "id": "chatcmpl-Cw3Yfhl1h8xClCtib5oXohTNgwx4w",
+  "id": "chatcmpl-Cw3lXdyI6EoapsB8Zy2zb9Yq7RokM",
   "object": "chat.completion",
-  "created": 1767952737,
+  "created": 1767953535,
   "model": "gpt-4o-mini-2024-07-18",
   "choices": [
     {
       "index": 0,
       "message": {
         "role": "assistant",
-        "content": "[{\"action\":\"CREATE_DOCUMENT\",\"parameters\":{\"file_name\":\"Plots_of_Land_Presentation.pptx\",\"type\":\"ppt\",\"content\":\"Slide 1: Introduction to Plots of Land\\nVisual Keywords: farmland, residential area, commercial property\\n- Plots of land are defined areas of land that can be used for various purposes.\\n- They can be categorized into residential, commercial, industrial, and agricultural.\\n- Understanding land plots is crucial for real estate and urban planning.\\n\\nSlide 2: Types of Land Plots\\nVisual Keywords: urban land, rural land, vacant land\\n- Residential plots are used for housing developments.\\n- Commercial plots are designated for businesses and retail.\\n- Agricultural plots are used for farming and crop production.\\n\\nSlide 3: Factors Influencing Land Value\\nVisual Keywords: location, zoning, infrastructure\\n- Location is a key factor; land in urban areas tends to be more valuable.\\n- Zoning laws dictate what can be built on a plot of land.\\n- Infrastructure such as roads and utilities can increase land value.\\n\\nSlide 4: Land Use Planning\\nVisual Keywords: city planning, zoning maps, development\\n- Land use planning involves managing how land is used and developed.\\n- It aims to balance economic growth with environmental protection.\\n- Zoning maps help visualize land use regulations.\\n\\nSlide 5: Conclusion\\nVisual Keywords: investment, sustainability, community\\n- Investing in land can be a profitable venture.\\n- Sustainable land use is essential for future generations.\\n- Community involvement in land planning leads to better outcomes.\"}}]}",
+        "content": "[{\"action\": \"SET_EMAIL_CREDENTIALS\", \"parameters\": {\"email\": \"botemailtesting101@gmail.com\", \"password\": \"ouir nhnm cgda xwhr\"}},{\"action\": \"SEND_EMAIL\", \"parameters\": {\"to\": \"ahmadfadihabash162@gmail.com\", \"subject\": \"Excited About IT!\", \"body\": \"Hello Ahmad,\\n\\nI just wanted to share my excitement about how IT worked! It's amazing to see everything come together and function so well. Looking forward to discussing this further!\\n\\nBest regards,\\n\\nYour Bot\"}}]",
         "refusal": null,
         "annotations": []
       },
@@ -18,11 +18,11 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 1790,
-    "completion_tokens": 330,
-    "total_tokens": 2120,
+    "prompt_tokens": 1537,
+    "completion_tokens": 123,
+    "total_tokens": 1660,
     "prompt_tokens_details": {
-      "cached_tokens": 1024,
+      "cached_tokens": 0,
       "audio_tokens": 0
     },
     "completion_tokens_details": {

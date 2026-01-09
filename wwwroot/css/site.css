@@ -554,8 +554,8 @@ body {
 .footer {
     background-color: var(--card-bg);
     border-top: 1px solid var(--border-color);
-    padding: 1.5rem 0;
-    margin-top: 3rem;
+    padding: 0.75rem 0;
+    margin-top: 1.5rem;
 }
 
 /* Responsive adjustments */
@@ -670,4 +670,15 @@ body {
 .form-check-label,
 .form-label {
     color: var(--text-color);
+}
+
+/* Chat bubble text wrapping */
+.chat-bubble,
+.glass-card p,
+#chat-window .p-3,
+#aiChatBody .chat-bubble {
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
 }
