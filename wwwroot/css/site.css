@@ -679,6 +679,6 @@ body {
 #aiChatBody .chat-bubble {
     word-wrap: break-word;
     word-break: break-word;
-    overflow-wrap: break-word;
+    overflow-wrap: anywhere;
     white-space: pre-wrap;
 }

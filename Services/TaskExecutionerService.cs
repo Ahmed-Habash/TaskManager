@@ -256,8 +256,13 @@ namespace TaskManager.Services
                                 settingsRoot["Email:Username"] = email;
                                 settingsRoot["Email:Password"] = pass;
                                 
-                                await File.WriteAllTextAsync(settingsPath, settingsRoot.ToJsonString(new JsonSerializerOptions { WriteIndented = true }));
-                                sb.AppendLine($"Successfully remembered credentials for {email}.");
+                                try {
+                                    await File.WriteAllTextAsync(settingsPath, settingsRoot.ToJsonString(new JsonSerializerOptions { WriteIndented = true }));
+                                    sb.AppendLine($"Successfully remembered credentials for {email}.");
+                                } catch (Exception ex) {
+                                    _logger.LogWarning($"Failed to save user settings: {ex.Message}");
+                                    sb.AppendLine($"Successfully set credentials for session, but failed to save to disk: {email}.");
+                                }
                             }
                             else
                             {
@@ -298,8 +303,12 @@ namespace TaskManager.Services
                             if (parameters.TryGetProperty("smtp_password", out var passProp))
                                 pass = passProp.GetString();
 
-                            await SendEmailAsync(to, subject, body, attachment, user, pass);
-                            sb.AppendLine($"Sent email to {to}.");
+                            try {
+                                await SendEmailAsync(to, subject, body, attachment, user, pass);
+                                sb.AppendLine($"Sent email to {to}.");
+                            } catch (Exception ex) {
+                                sb.AppendLine($"Failed to send email: {ex.Message}");
+                            }
                         }
                         else if (action == "CREATE_DOCUMENT")
                         {
@@ -1187,6 +1196,7 @@ namespace TaskManager.Services
                 using (var client = new System.Net.Mail.SmtpClient(smtpServer, port))
                 {
                     client.EnableSsl = true;
+                    client.Timeout = 30000; // 30 second timeout
                     client.Credentials = new System.Net.NetworkCredential(finalUser, finalPass);
 
                     using (var mailMessage = new System.Net.Mail.MailMessage())
@@ -1224,15 +1234,19 @@ namespace TaskManager.Services
 
         private async Task LogEmailSimulation(string to, string subject, string body, string? attachmentPath, string? username, string? password, string status)
         {
-             var emailLogPath = Path.Combine(_environment.WebRootPath, "exports", "email_logs.txt");
-            var directory = Path.GetDirectoryName(emailLogPath);
-            if (!Directory.Exists(directory)) Directory.CreateDirectory(directory);
+            try {
+                var emailLogPath = Path.Combine(_environment.WebRootPath, "exports", "email_logs.txt");
+                var directory = Path.GetDirectoryName(emailLogPath);
+                if (!Directory.Exists(directory)) Directory.CreateDirectory(directory);
 
-            var authInfo = (username != null && password != null) ? $"[Authenticated as {username}]" : "[No Credentials]";
-            var attInfo = attachmentPath != null ? $"[Attachment: {attachmentPath}]" : "";
+                var authInfo = (username != null && password != null) ? $"[Authenticated as {username}]" : "[No Credentials]";
+                var attInfo = attachmentPath != null ? $"[Attachment: {attachmentPath}]" : "";
 
-            var logEntry = $"[{DateTime.Now}] {status} {authInfo} To: {to}, Subject: {subject}, Body: {body} {attInfo}\n----------------------------------------\n";
-            await File.AppendAllTextAsync(emailLogPath, logEntry);
+                var logEntry = $"[{DateTime.Now}] {status} {authInfo} To: {to}, Subject: {subject}, Body: {body} {attInfo}\n----------------------------------------\n";
+                await File.AppendAllTextAsync(emailLogPath, logEntry);
+            } catch (Exception ex) {
+                _logger.LogWarning($"Could not log email simulation: {ex.Message}");
+            }
         }
     }
 }

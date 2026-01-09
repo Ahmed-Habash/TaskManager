@@ -84,8 +84,8 @@
                               title="<b>How to Command the AI:</b><br/>• <b>Docs:</b> 'Write an essay...'<br/>• <b>Excel:</b> 'Make a sheet with...'<br/>• <b>Charts:</b> 'Plot a line chart of...'<br/>• <b>Slides:</b> 'Create a presentation...'<br/>• <b>Email:</b> 'Send email...' (<i>Setup first</i>)">
                             <i class="bi bi-question-circle"></i>
                         </span>
-                        <input type="text" id="user-input" class="form-control border-0 bg-transparent py-2" 
-                               placeholder="Describe your task (e.g., 'Make a report on...')" autocomplete="off" />
+                        <textarea id="user-input" class="form-control border-0 bg-transparent py-2 resize-none" 
+                                  placeholder="Describe your task (e.g., 'Make a report on...')" rows="1"></textarea>
                         <button id="send-btn" class="btn btn-primary rounded-circle p-2 ms-2 lh-1 shadow-sm" style="width: 42px; height: 42px;">
                             <i class="bi bi-arrow-up"></i>
                         </button>
@@ -107,9 +107,22 @@
 
     if (chatWindow) chatWindow.scrollTop = chatWindow.scrollHeight;
 
-    userInput.addEventListener("keypress", function(e) {
-        if (e.key === "Enter") {
+    userInput.addEventListener("keydown", function(e) {
+        if (e.key === "Enter" && !e.shiftKey) {
+            e.preventDefault();
             sendMessage();
+        }
+    });
+
+    // Auto-resize textarea
+    userInput.addEventListener("input", function() {
+        this.style.height = 'auto';
+        this.style.height = (this.scrollHeight) + 'px';
+        if (this.scrollHeight > 200) {
+            this.style.height = '200px';
+            this.style.overflowY = 'auto';
+        } else {
+            this.style.overflowY = 'hidden';
         }
     });
 
@@ -139,15 +152,21 @@
                 if (current < 85) progressBar.style.width = (current + 5) + '%';
             }, 800);
 
+            // Add timeout controller to prevent long-hanging requests (2 min for email operations)
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 120000); // 2 minute timeout
+
             var response = await fetch('?handler=Chat', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                     'RequestVerificationToken': token
                 },
-                body: JSON.stringify({ command: text, historyJson: history })
+                body: JSON.stringify({ command: text, historyJson: history }),
+                signal: controller.signal
             });
             
+            clearTimeout(timeoutId);
             clearInterval(progressInterval);
             progressBar.style.width = '100%';
 
@@ -163,14 +182,18 @@
                 appendMessage('AI', "Error: " + data.message);
             }
 
-        } catch (error) {
-            appendMessage('AI', "Technical Failure: " + error.message);
+            }
         } finally {
             setTimeout(() => {
                 progressContainer.classList.add('d-none');
                 progressBar.style.width = '0%';
                 userInput.disabled = false;
                 sendBtn.disabled = false;
+                
+                // Reset textarea height after sending
+                userInput.value = "";
+                userInput.style.height = 'auto';
+                
                 userInput.focus();
             }, 1000);
         }
@@ -233,7 +256,18 @@
     #chat-window::-webkit-scrollbar-thumb { background: rgba(var(--primary-color-rgb), 0.2); border-radius: 3px; }
     #chat-window::-webkit-scrollbar-thumb:hover { background: rgba(var(--primary-color-rgb), 0.4); }
     
+    .resize-none { resize: none; overflow-y: hidden; max-height: 200px; line-height: 1.5; }
+    #user-input { min-height: 42px; }
+    
     .shadow-primary { box-shadow: 0 4px 14px rgba(var(--primary-color-rgb), 0.4); }
+    
+    /* Word wrapping for chat messages */
+    #chat-window .p-3 {
+        word-wrap: break-word;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+        white-space: pre-wrap;
+    }
     
     .animate-pulse {
         animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;

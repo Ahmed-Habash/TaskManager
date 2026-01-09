@@ -1,15 +1,15 @@
-[1/9/2026 1:12:17 PM] Raw Response:
+[1/9/2026 1:30:43 PM] Raw Response:
 {
-  "id": "chatcmpl-Cw3lXdyI6EoapsB8Zy2zb9Yq7RokM",
+  "id": "chatcmpl-Cw43OISsuaz1dxgx9HExJwGeMK47n",
   "object": "chat.completion",
-  "created": 1767953535,
+  "created": 1767954642,
   "model": "gpt-4o-mini-2024-07-18",
   "choices": [
     {
       "index": 0,
       "message": {
         "role": "assistant",
-        "content": "[{\"action\": \"SET_EMAIL_CREDENTIALS\", \"parameters\": {\"email\": \"botemailtesting101@gmail.com\", \"password\": \"ouir nhnm cgda xwhr\"}},{\"action\": \"SEND_EMAIL\", \"parameters\": {\"to\": \"ahmadfadihabash162@gmail.com\", \"subject\": \"Excited About IT!\", \"body\": \"Hello Ahmad,\\n\\nI just wanted to share my excitement about how IT worked! It's amazing to see everything come together and function so well. Looking forward to discussing this further!\\n\\nBest regards,\\n\\nYour Bot\"}}]",
+        "content": "[{\"action\": \"SET_EMAIL_CREDENTIALS\", \"parameters\": {\"email\": \"botemailtesting101@gmail.com\", \"password\": \"ouir nhnm cgda xwhr\"}},{\"action\": \"SEND_EMAIL\", \"parameters\": {\"to\": \"ahmadfadihabash162@gmail.com\", \"subject\": \"Excited About IT!\", \"body\": \"Hi Ahmad,\\n\\nI just wanted to share my excitement about how IT worked! It's amazing to see everything come together seamlessly.\\n\\nBest,\\nBot\"}}]",
         "refusal": null,
         "annotations": []
       },
@@ -19,8 +19,8 @@
   ],
   "usage": {
     "prompt_tokens": 1537,
-    "completion_tokens": 123,
-    "total_tokens": 1660,
+    "completion_tokens": 110,
+    "total_tokens": 1647,
     "prompt_tokens_details": {
       "cached_tokens": 0,
       "audio_tokens": 0
