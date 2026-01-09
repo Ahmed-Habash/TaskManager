@@ -1126,7 +1126,7 @@ namespace TaskManager.Services
             string? finalPass = null;
             try
             {
-                _logger.LogInformation($"Attempting to send email to {to} with subject '{subject}'");
+                _logger.LogInformation($"Attempting to send email to {to} with subject '{subject}' via MailKit");
 
                 // Ensure exports directory exists for debug logging
                 var debugPath = Path.Combine(_environment.WebRootPath, "exports", "debug_email.txt");
@@ -1135,11 +1135,11 @@ namespace TaskManager.Services
                 
                 // Fallback to configuration if not provided
                 var smtpServer = _configuration["Email:SmtpServer"] ?? "smtp.gmail.com";
-                var portStr = _configuration["Email:Port"] ?? "587";
+                var portStr = _configuration["Email:Port"] ?? "465"; // Default to 465 now as it's more reliable for SSL
                 if (!int.TryParse(portStr, out int port)) 
                 {
-                    port = 587;
-                    _logger.LogWarning($"Failed to parse Email:Port '{portStr}', defaulting to 587.");
+                    port = 465;
+                    _logger.LogWarning($"Failed to parse Email:Port '{portStr}', defaulting to 465.");
                 }
                 
                 var configUser = _configuration["Email:Username"];
@@ -1157,8 +1157,6 @@ namespace TaskManager.Services
                         try
                         {
                             var settingsJson = await File.ReadAllTextAsync(settingsPath);
-                            // Avoid logging sensitive passwords to file if possible, or truncate
-                            
                             var settingsNode = JsonNode.Parse(settingsJson);
                             if (settingsNode != null)
                             {
@@ -1199,48 +1197,60 @@ namespace TaskManager.Services
                    var msg = "FAILED: No Credentials Provided (User or Password missing)";
                    _logger.LogWarning(msg);
                    await LogEmailSimulation(to, subject, body, attachmentPath, finalUser, finalPass, msg);
-                   // We must exit or throw here
                    throw new Exception(msg); 
                 }
 
-                using (var client = new System.Net.Mail.SmtpClient(smtpServer, port))
+                using (var message = new MimeKit.MimeMessage())
                 {
-                    client.EnableSsl = true;
-                    // Lower timeout to fail faster (15 seconds)
-                    client.Timeout = 15000; 
-                    client.Credentials = new System.Net.NetworkCredential(finalUser, finalPass);
+                    message.From.Add(new MimeKit.MailboxAddress(senderName, senderEmail ?? finalUser));
+                    message.To.Add(MimeKit.MailboxAddress.Parse(to));
+                    message.Subject = subject;
 
-                    using (var mailMessage = new System.Net.Mail.MailMessage())
+                    var builder = new MimeKit.BodyBuilder();
+                    builder.HtmlBody = body;
+
+                    if (!string.IsNullOrEmpty(attachmentPath))
                     {
-                        mailMessage.From = new System.Net.Mail.MailAddress(senderEmail ?? finalUser, senderName);
-                        mailMessage.To.Add(to);
-                        mailMessage.Subject = subject;
-                        mailMessage.Body = body;
-                        mailMessage.IsBodyHtml = true; 
-                        
-                        if (!string.IsNullOrEmpty(attachmentPath))
+                        var fullPath = attachmentPath;
+                        if (!File.Exists(fullPath))
                         {
-                            var fullPath = attachmentPath;
-                            if (!File.Exists(fullPath))
-                            {
-                                var exportsPath = Path.Combine(_environment.WebRootPath, "exports", attachmentPath);
-                                if (File.Exists(exportsPath)) fullPath = exportsPath;
-                            }
-
-                            if (File.Exists(fullPath))
-                            {
-                                mailMessage.Attachments.Add(new System.Net.Mail.Attachment(fullPath));
-                            }
-                            else
-                            {
-                                _logger.LogWarning($"Attachment not found: {attachmentPath}");
-                            }
+                            var exportsPath = Path.Combine(_environment.WebRootPath, "exports", attachmentPath);
+                            if (File.Exists(exportsPath)) fullPath = exportsPath;
                         }
 
-                        _logger.LogInformation("Sending email...");
-                        await client.SendMailAsync(mailMessage);
+                        if (File.Exists(fullPath))
+                        {
+                            builder.Attachments.Add(fullPath);
+                        }
+                        else
+                        {
+                            _logger.LogWarning($"Attachment not found: {attachmentPath}");
+                        }
+                    }
+
+                    message.Body = builder.ToMessageBody();
+
+                    using (var client = new MailKit.Net.Smtp.SmtpClient())
+                    {
+                        // Accept all SSL certificates (dangerous in production but solves many hosting issues)
+                        client.ServerCertificateValidationCallback = (s, c, h, e) => true;
+
+                        _logger.LogInformation($"Connecting to {smtpServer}:{port}...");
+                        
+                        // Use Implicit SSL for 465, otherwise StartTls for 587/25
+                        var options = port == 465 ? MailKit.Security.SecureSocketOptions.SslOnConnect : MailKit.Security.SecureSocketOptions.StartTls;
+                        
+                        await client.ConnectAsync(smtpServer, port, options);
+                        _logger.LogInformation("Connected. Authenticating...");
+
+                        await client.AuthenticateAsync(finalUser, finalPass);
+                        _logger.LogInformation("Authenticated. Sending...");
+
+                        await client.SendAsync(message);
+                        await client.DisconnectAsync(true);
+
                         _logger.LogInformation("Email sent successfully.");
-                        await LogEmailSimulation(to, subject, body, attachmentPath, finalUser, finalPass, "SUCCESS: Sent via SMTP");
+                        await LogEmailSimulation(to, subject, body, attachmentPath, finalUser, finalPass, "SUCCESS: Sent via MailKit");
                     }
                 }
             }

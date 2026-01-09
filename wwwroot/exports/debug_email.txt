@@ -23,3 +23,9 @@ JSON content: {
 Found Username: botemailtesting101@gmail.com
 Found Password
 FinalUser: botemailtesting101@gmail.com, To: ahmadfadihabash162@gmail.com, Sender: botemailtesting101@gmail.com
+[1/9/2026 2:22:57 PM] Checking settings at C:\Users\ahmad\OneDrive\Desktop\Github\TaskManager\user_settings.json
+Found Username: botemailtesting101@gmail.com
+Found Password (masked)
+FinalUser: botemailtesting101@gmail.com, To: ahmadfadihabash162@gmail.com, Sender: botemailtesting101@gmail.com, Server: smtp.gmail.com:587
+FinalUser: botemailtesting101@gmail.com, To: ahmadfadihabash162@gmail.com, Sender: botemailtesting101@gmail.com, Server: smtp.gmail.com:587
+FinalUser: botemailtesting101@gmail.com, To: ahmadfadihabash162@gmail.com, Sender: botemailtesting101@gmail.com, Server: smtp.gmail.com:587

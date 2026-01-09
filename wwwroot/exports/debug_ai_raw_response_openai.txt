@@ -1,15 +1,15 @@
-[1/9/2026 2:00:57 PM] Raw Response:
+[1/9/2026 2:26:51 PM] Raw Response:
 {
-  "id": "chatcmpl-Cw4Wg0XWYnaIygSWQ2L48Pw71QGsC",
+  "id": "chatcmpl-Cw4vhQSpEptKRLxSw0J2iaa8cfUAK",
   "object": "chat.completion",
-  "created": 1767956458,
+  "created": 1767958009,
   "model": "gpt-4o-mini-2024-07-18",
   "choices": [
     {
       "index": 0,
       "message": {
         "role": "assistant",
-        "content": "[{\"action\": \"CHAT\", \"parameters\": {\"message\": \"It seems like you're entering random characters. How can I assist you today?\"}}]",
+        "content": "[{\"action\": \"SET_EMAIL_CREDENTIALS\", \"parameters\": {\"email\": \"botemailtesting101@gmail.com\", \"password\": \"ouir nhnm cgda xwhr\"}},{\"action\": \"SEND_EMAIL\", \"parameters\": {\"to\": \"ahmadfadihabash162@gmail.com\", \"subject\": \"Going Crazy!\", \"body\": \"Hey Ahmad!\\n\\nI just wanted to reach out and say that the world is a wild place! Did you know that honey never spoils? Or that octopuses have three hearts? It's true! Life is full of surprises, and sometimes you just have to embrace the chaos. Let's go on an adventure soon and make some unforgettable memories!\\n\\nStay awesome!\\n\\nBest,\\nYour Friendly Bot\"}}]",
         "refusal": null,
         "annotations": []
       },
@@ -18,9 +18,9 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 1520,
-    "completion_tokens": 31,
-    "total_tokens": 1551,
+    "prompt_tokens": 1592,
+    "completion_tokens": 159,
+    "total_tokens": 1751,
     "prompt_tokens_details": {
       "cached_tokens": 0,
       "audio_tokens": 0

@@ -122,3 +122,16 @@ I just wanted to share my excitement about how IT worked! It's amazing to see ev
 Best,
 Bot 
 ----------------------------------------
+[1/9/2026 2:23:00 PM] SUCCESS: Sent via SMTP [Authenticated as botemailtesting101@gmail.com] To: ahmadfadihabash162@gmail.com, Subject: Hello from the Bot, Body: This is a test email sent from the bot. 
+----------------------------------------
+[1/9/2026 2:25:56 PM] SUCCESS: Sent via MailKit [Authenticated as botemailtesting101@gmail.com] To: ahmadfadihabash162@gmail.com, Subject: Hello from the bot!, Body: This is a test email sent from the bot. Hope you are doing well! 
+----------------------------------------
+[1/9/2026 2:26:53 PM] SUCCESS: Sent via MailKit [Authenticated as botemailtesting101@gmail.com] To: ahmadfadihabash162@gmail.com, Subject: Going Crazy!, Body: Hey Ahmad!
+
+I just wanted to reach out and say that the world is a wild place! Did you know that honey never spoils? Or that octopuses have three hearts? It's true! Life is full of surprises, and sometimes you just have to embrace the chaos. Let's go on an adventure soon and make some unforgettable memories!
+
+Stay awesome!
+
+Best,
+Your Friendly Bot 
+----------------------------------------
