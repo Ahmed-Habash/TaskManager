@@ -95,24 +95,6 @@ namespace TaskManager.Services
             return "[]";
         }
 
-        public async Task<string> SimulateSearchAsync(string query)
-        {
-            var list = GetPriorityList();
-            foreach (var name in list)
-            {
-                var service = GetServiceByName(name);
-                if (service == null) continue;
-
-                try
-                {
-                    var result = await service.SimulateSearchAsync(query);
-                    if (!result.Contains("failed") && !result.Contains("error")) return result;
-                }
-                catch {}
-            }
-            return "Search simulation failed across all providers.";
-        }
-
         public async Task<string> SummarizeSearchResultsAsync(string query, string rawResults)
         {
             var list = GetPriorityList();

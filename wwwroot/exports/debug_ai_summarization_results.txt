@@ -21,3 +21,37 @@ Summary: - [HyperX SoloCast Microphone](https://gamerzoneme.com/shop/gamer-fest/
 - [HyperX SoloCast 2 USB Gaming Microphone](https://qatar.microless.com/microphones/?query=gaming) - Price: See site - Microless
 - [Shure MV6 - USB Gaming Microphone](https://qatarhomestudio.com/products/shure-mv6) - Price: See site - Qatar Home Studio
 
+[1/9/2026 12:34:26 PM] Query: top 5 most watched movies in 2025
+Summary: - [Domestic Box Office For 2025 - Box Office Mojo](https://www.boxofficemojo.com/year/2025/) - Price: N/A - Box Office Mojo
+- [Best New Movies of 2025, Ranked by Tomatometer | Rotten Tomatoes](https://editorial.rottentomatoes.com/guide/best-new-movies/) - Price: N/A - Rotten Tomatoes
+- [Most Popular Movies of 2025 - IMDb](https://www.imdb.com/best-of/most-popular-movies-2025/) - Price: N/A - IMDb
+- [Best Movies of 2025 - Rolling Stone](https://www.rollingstone.com/tv-movies/tv-movie-lists/best-movies-2025-1235440226/) - Price: N/A - Rolling Stone
+- [The Most Anticipated Movies of 2025 | Rotten Tomatoes](https://editorial.rottentomatoes.com/article/the-most-anticipated-movies-of-2025/) - Price: N/A - Rotten Tomatoes
+
+[1/9/2026 12:35:43 PM] Query: microphone site:.qa
+Summary: - [Canon DM-E100 Stereo Microphone](https://www.canon-ois.qa/microphones/stereo-microphone-dm-e100/) - Price: N/A - Canon Qatar
+- [B20 Portable Wireless Microphone](https://platinumkaraoke.qa/products/b20-portable-wireless-microphone) - Price: 249.00 QAR - Platinum Karaoke
+- [Canon DM-E1D Stereo Microphone](https://www.canon-ois.qa/microphones/stereo-microphone-dm-e1d/) - Price: N/A - Canon Qatar
+- [B10 Portable Wireless Microphone](https://platinumkaraoke.qa/products/b10-portable-wireless-microphone) - Price: 149.00 QAR - Platinum Karaoke
+- [Sony ECM-B1M Shotgun Microphone](https://sonyworld.qa/products/sony-shotgun-microphone) - Price: 1,499.00 QAR - Sony World Qatar
+
+[1/9/2026 12:37:08 PM] Query: top 5 most watched movies in 2025
+Summary: - [Domestic Box Office For 2025 - Box Office Mojo](https://www.boxofficemojo.com/year/2025/) - Price: N/A - Website
+- [Best New Movies of 2025, Ranked by Tomatometer | Rotten Tomatoes](https://editorial.rottentomatoes.com/guide/best-new-movies/) - Price: N/A - Website
+- [Most Popular Movies of 2025 - IMDb](https://www.imdb.com/best-of/most-popular-movies-2025/) - Price: N/A - Website
+- [Best Movies of 2025](https://www.rollingstone.com/tv-movies/tv-movie-lists/best-movies-2025-1235440226/) - Price: N/A - Website
+
+[1/9/2026 12:39:51 PM] Query: top 5 most watched movies in 2025
+Summary: - [Domestic Box Office For 2025 - Box Office Mojo](https://www.boxofficemojo.com/year/2025/) - Price: N/A - Box Office Mojo
+- [Best Movies of 2025 - Rolling Stone](https://www.rollingstone.com/tv-movies/tv-movie-lists/best-movies-2025-1235440226/) - Price: N/A - Rolling Stone
+- [Most Popular Movies of 2025 - IMDb](https://www.imdb.com/best-of/most-popular-movies-2025/) - Price: N/A - IMDb
+- [Best New Movies of 2025, Ranked by Tomatometer - Rotten Tomatoes](https://editorial.rottentomatoes.com/guide/best-new-movies/) - Price: N/A - Rotten Tomatoes
+- [The Most Anticipated Movies of 2025 - Rotten Tomatoes](https://editorial.rottentomatoes.com/article/the-most-anticipated-movies-of-2025/) - Price: N/A - Rotten Tomatoes
+
+[1/9/2026 12:47:46 PM] Query: top 5 most watched movies in 2025
+Summary: - [Domestic Box Office For 2025 - Box Office Mojo](https://www.boxofficemojo.com/year/2025/) - Price: N/A - Box Office Mojo
+- [Best Movies of 2025 - Rolling Stone](https://www.rollingstone.com/tv-movies/tv-movie-lists/best-movies-2025-1235440226/) - Price: N/A - Rolling Stone
+- [Most Popular Movies of 2025 - IMDb](https://www.imdb.com/best-of/most-popular-movies-2025/) - Price: N/A - IMDb
+- [Best New Movies of 2025, Ranked by Tomatometer - Rotten Tomatoes](https://editorial.rottentomatoes.com/guide/best-new-movies/) - Price: N/A - Rotten Tomatoes
+- [The Most Anticipated Movies of 2025 - Rotten Tomatoes](https://editorial.rottentomatoes.com/article/the-most-anticipated-movies-of-2025/) - Price: N/A - Rotten Tomatoes
+

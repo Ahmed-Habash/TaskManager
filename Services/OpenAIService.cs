@@ -177,11 +177,13 @@ Examples:
 - User: 'what is the weather' -> [{{""action"": ""SEARCH_WEB"", ""parameters"": {{""query"": ""current weather""}}}}]
 
 Rules:
+- PRIORITY 1 - CHARTING: If the user says 'plot', 'graph', 'chart', or 'visualize', you MUST use CREATE_CHART IMMEDIATELY. DO NOT search first. Use your internal knowledge or make plausible estimates for the data. CRITICAL: Use REAL NAMES for labels (e.g. 'Avatar', 'Avengers', 'Inside Out 2'), NEVER use placeholders like 'Movie A', 'Item 1', or 'Example'. If the topic is well-known (e.g. 'top 5 movies'), use actual movie titles and realistic viewership numbers. If niche (e.g. 'Green Birb Coin'), invent plausible data with realistic-looking labels. NEVER search for chart requests.
+- PRIORITY 2 - SPREADSHEETS: If the user says 'create a sheet', 'make an excel', or 'spreadsheet', you MUST use CREATE_SPREADSHEET IMMEDIATELY with generated data. DO NOT search.
 - DIRECT ACTION: If asked to 'make', 'create', 'write', 'generate', or 'convert to file', you MUST use the appropriate CREATE_ tool. NEVER just chat or ask for clarification if the request is for a file.
 - REFUSALS: If a request is prohibited (e.g., illegal, harmful, sensitive) or you cannot fulfill it, you MUST use the CHAT action to explain clearly to the user why you cannot fulfill the request. NEVER output an empty array '[]'.
 - COMPLEX REQUESTS: If asked for many slides (e.g., 20), YOU MUST GENERATE ALL OF THEM in one single JSON action. Do not truncate.
 - CHECK HISTORY for context/creds first.
-- SEARCH_WEB: Use ONLY for direct questions or if the topics is truly unknown/real-time (like current events, future movies, weather). For shopping queries, ALWAYS add 'buy' or 'specific product' to the query. For Temu, prefer 'site:temu.com ""product""' to find products. For regional queries (e.g. 'in Qatar'), prioritize local domains ending in the country code (e.g. '.qa') or include local currency in the query (e.g. 'QAR').
+- SEARCH_WEB: Use ONLY for explicit questions like 'what is', 'who is', 'find', 'search for', or 'look up'. NEVER use SEARCH_WEB if the user says 'plot', 'chart', 'graph', or 'sheet'. For shopping queries, ALWAYS add 'buy' or 'specific product' to the query.
 - GMAIL WARNING: If the user provides a @gmail.com address, you MUST warn them in a CHAT action that they likely need an 'App Password' for this to work, even if they give a regular password.
 - REMEMBERING: If the user explicitly gives credentials, use SET_EMAIL_CREDENTIALS immediately. 
 - PPT Images: Provide 2-3 HIGHLY CONCRETE and DESCRIPTIVE nouns for `image_keyword` and `Visual Keywords`. 
@@ -326,48 +328,6 @@ Rules:
             {
                 _logger.LogError(ex, "Exception calls OpenAI API for Action");
                 return JsonSerializer.Serialize(new[] { new { action = "error", parameters = new { message = ex.Message } } });
-            }
-        }
-        public async Task<string> SimulateSearchAsync(string query)
-        {
-            var apiKey = _configuration["OpenAI:ApiKey"];
-            if (string.IsNullOrEmpty(apiKey)) return "Unable to search: API Key missing.";
-
-            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", apiKey);
-
-            var messages = new List<object>
-            {
-                new { role = "system", content = "You are a helpful search engine simulator. The user asked a query. Provide a detailed, helpful summary answer based on your knowledge. If the query is about prices or specific availability, give typical estimates and likely stores. Be concise but informative." },
-                new { role = "user", content = query }
-            };
-
-            var requestBody = new
-            {
-                model = "gpt-4o-mini",
-                messages = messages,
-                max_tokens = 300
-            };
-
-            var content = new StringContent(JsonSerializer.Serialize(requestBody), Encoding.UTF8, "application/json");
-
-            try
-            {
-                var response = await CallPostAsyncWithRetry("chat/completions", content);
-                if (!response.IsSuccessStatusCode) return "Search failed: OpenAI Error.";
-
-                var jsonResponse = await response.Content.ReadAsStringAsync();
-                using var result = JsonDocument.Parse(jsonResponse);
-                
-                if (result.RootElement.TryGetProperty("choices", out var choices) && choices.GetArrayLength() > 0)
-                {
-                   return choices[0].GetProperty("message").GetProperty("content").GetString() ?? "No results found.";
-                }
-                return "No results found."; // Added return for success path without choices
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Search Simulation Failed");
-                return "Search failed due to an error.";
             }
         }
         public async Task<string> SummarizeSearchResultsAsync(string query, string rawResults)

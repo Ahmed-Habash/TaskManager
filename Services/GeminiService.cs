@@ -286,36 +286,6 @@ Rules:
             return "[]";
         }
 
-        public async Task<string> SimulateSearchAsync(string query)
-        {
-            var apiKey = _configuration["Gemini:ApiKey"];
-            if (string.IsNullOrEmpty(apiKey)) return "Gemini search failed: API Key missing.";
-
-            var requestBody = new GeminiRequest
-            {
-                system_instruction = new GeminiContent { parts = new List<GeminiPart> { new GeminiPart { text = "Simulate a search result for the given query." } } },
-                contents = new List<GeminiContent> { 
-                    new GeminiContent { role = "user", parts = new List<GeminiPart> { new GeminiPart { text = $"Simulate a search for: {query}. Provide a helpful summary." } } } 
-                }
-            };
-            var url = $"https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key={apiKey}";
-
-            try
-            {
-                var response = await _httpClient.PostAsync(url, new StringContent(JsonSerializer.Serialize(requestBody), Encoding.UTF8, "application/json"));
-                if (!response.IsSuccessStatusCode) return "Search failed: Gemini Error.";
-
-                var jsonResponse = await response.Content.ReadAsStringAsync();
-                using var doc = JsonDocument.Parse(jsonResponse);
-                if (doc.RootElement.TryGetProperty("candidates", out var candidates) && candidates.GetArrayLength() > 0)
-                {
-                    return candidates[0].GetProperty("content").GetProperty("parts")[0].GetProperty("text").GetString() ?? "No results.";
-                }
-            }
-            catch { }
-            return "Search failed.";
-        }
-
         public async Task<string> SummarizeSearchResultsAsync(string query, string rawResults)
         {
             var apiKey = _configuration["Gemini:ApiKey"];

@@ -180,34 +180,6 @@ Rules:
             catch { return "[]"; }
         }
 
-        public async Task<string> SimulateSearchAsync(string query)
-        {
-            var apiKey = _configuration["OpenRouter:ApiKey"];
-            if (string.IsNullOrEmpty(apiKey)) return "Search failed: API Key missing.";
-
-            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", apiKey);
-
-            var messages = new List<object>
-            {
-                new { role = "system", content = "You are a helpful search engine simulator. Provide a detailed, helpful summary answer based on your knowledge.\n\nIMPORTANT: If the user asks about a niche, new, or potentially fictional item (e.g. 'Green Birb Coin') and you lack live data, DO NOT say 'I don't know'. Instead, provide a 'Last Known Value' or 'Estimated Range' based on similar assets (e.g. 'Approx $0.002') so the user can test their request. Mark these as [ESTIMATED]." },
-                new { role = "user", content = query }
-            };
-
-            var requestBody = new { model = "openai/gpt-4o-mini", messages = messages, max_tokens = 300 };
-
-            try
-            {
-                var content = new StringContent(JsonSerializer.Serialize(requestBody), Encoding.UTF8, "application/json");
-                var response = await _httpClient.PostAsync("chat/completions", content);
-                if (!response.IsSuccessStatusCode) return "OpenRouter search simulation failed.";
-
-                var jsonResponse = await response.Content.ReadAsStringAsync();
-                using var result = JsonDocument.Parse(jsonResponse);
-                return result.RootElement.GetProperty("choices")[0].GetProperty("message").GetProperty("content").GetString() ?? "No results.";
-            }
-            catch { return "Search error."; }
-        }
-
         public async Task<string> SummarizeSearchResultsAsync(string query, string rawResults)
         {
             var apiKey = _configuration["OpenRouter:ApiKey"];

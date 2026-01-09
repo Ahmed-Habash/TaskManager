@@ -81,7 +81,6 @@ namespace TaskManager.Services
                             if (parameters.TryGetProperty("query", out var qProp)) query = qProp.GetString() ?? "Generic Search";
                             
                             string searchResult;
-                            bool isSimulated = false;
                             try 
                             {
                                 var googleApiKey = _configuration["Google:ApiKey"];
@@ -208,40 +207,26 @@ namespace TaskManager.Services
                                             }
                                             else
                                             {
-                                                searchResult = "No results found.";
+                                                searchResult = "No results found (0 items returned).";
                                             }
                                         }
                                         else
                                         {
-                                            isSimulated = true;
-                                            searchResult = await _aiService.SimulateSearchAsync(query);
+                                            searchResult = $"Google Search failed. Status Code: {response.StatusCode}";
                                         }
                                     }
                                 }
                                 else
                                 {
-                                    isSimulated = true;
-                                    searchResult = await _aiService.SimulateSearchAsync(query);
+                                    searchResult = "Search unavailable: Google API Key or Search Engine ID is missing in configuration.";
                                 }
                             }
-                            catch
+                            catch (Exception ex)
                             {
-                                isSimulated = true;
-                                searchResult = await _aiService.SimulateSearchAsync(query);
+                                searchResult = $"Search execution error: {ex.Message}";
                             }
 
-                            // Fallback: If Google search yielded nothing useful (e.g. niche coin), try simulating an estimate
-                            if (!isSimulated && (searchResult.Contains("No relevant information") || searchResult.Contains("Price: N/A")))
-                            {
-                                var fallback = await _aiService.SimulateSearchAsync(query + " estimate price");
-                                if (!fallback.Contains("Search failed") && !fallback.Contains("No results"))
-                                {
-                                    searchResult = fallback + "\n\n(Note: Live data unavailable, showing estimates)";
-                                    isSimulated = true;
-                                }
-                            }
-
-                            string prefix = isSimulated ? "[Simulated Web Search]" : "[Google Search]";
+                            string prefix = "[Google Search]";
                             sb.AppendLine($"{prefix} for '{query}':\n{searchResult}");
                         }
                         else if (action == "SET_EMAIL_CREDENTIALS")
@@ -584,22 +569,19 @@ namespace TaskManager.Services
             // Use QuickChart.io for simple, high-quality chart generation
             // Example: https://quickchart.io/chart?c={type:'bar',data:{labels:['Q1','Q2'], datasets:[{label:'Users',data:[50,60]}]}}
             
-            object backgroundColor;
-            if (chartType.ToLower() == "pie" || chartType.ToLower() == "doughnut")
-            {
-                backgroundColor = new[] {
-                    "rgba(255, 99, 132, 0.5)",
-                    "rgba(54, 162, 235, 0.5)",
-                    "rgba(255, 206, 86, 0.5)",
-                    "rgba(75, 192, 192, 0.5)",
-                    "rgba(153, 102, 255, 0.5)",
-                    "rgba(255, 159, 64, 0.5)"
-                };
-            }
-            else
-            {
-                backgroundColor = "rgba(99, 102, 241, 0.5)";
-            }
+            // Use colorful backgrounds for all chart types
+            object backgroundColor = new[] {
+                "rgba(255, 99, 132, 0.7)",
+                "rgba(54, 162, 235, 0.7)",
+                "rgba(255, 206, 86, 0.7)",
+                "rgba(75, 192, 192, 0.7)",
+                "rgba(153, 102, 255, 0.7)",
+                "rgba(255, 159, 64, 0.7)",
+                "rgba(199, 199, 199, 0.7)",
+                "rgba(83, 102, 255, 0.7)",
+                "rgba(255, 99, 255, 0.7)",
+                "rgba(99, 255, 132, 0.7)"
+            };
 
             var chartConfig = new {
                 type = chartType,

@@ -27,7 +27,6 @@ namespace TaskManager.Services
         /// Returns a JSON string describing the action and parameters.
         /// </summary>
         Task<string> DetermineActionAsync(string userPrompt, IEnumerable<ChatMessage> history);
-        Task<string> SimulateSearchAsync(string query);
         Task<string> SummarizeSearchResultsAsync(string query, string rawResults);
     }
 }
