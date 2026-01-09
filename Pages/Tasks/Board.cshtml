@@ -291,7 +291,7 @@
                 <i class="bi bi-question-circle"></i>
             </span>
             <input type="text" id="aiChatInput" class="form-control border-0 bg-transparent flex-grow-1" placeholder="Ask anything..." 
-                   onkeypress="handleEnter(event)"
+                   onkeydown="handleEnter(event)"
                    ondragover="allowDrop(event)"
                    ondrop="handleTaskDrop(event)">
             <button class="btn btn-primary rounded-circle p-2 ms-2 lh-1" type="button" id="aiSendBtn" onclick="sendAIMessage()">
@@ -645,7 +645,7 @@
         }
 
         function handleEnter(e) {
-            if (e.key === 'Enter' && e.shiftKey) {
+            if ((e.key === 'Enter' || e.keyCode === 13) && e.shiftKey) {
                 e.preventDefault();
                 sendAIMessage();
             }

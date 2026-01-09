@@ -108,7 +108,7 @@
     if (chatWindow) chatWindow.scrollTop = chatWindow.scrollHeight;
 
     userInput.addEventListener("keydown", function(e) {
-        if (e.key === "Enter" && e.shiftKey) {
+        if ((e.key === "Enter" || e.keyCode === 13) && e.shiftKey) {
             e.preventDefault();
             sendMessage();
         }
@@ -180,8 +180,6 @@
                 historyField.value = data.historyJson;
             } else {
                 appendMessage('AI', "Error: " + data.message);
-            }
-
             }
         } finally {
             setTimeout(() => {
