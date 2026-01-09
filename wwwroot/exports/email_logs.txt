@@ -48,3 +48,55 @@ I apologize for forgetting to send this earlier at work. Please find attached th
 Best regards,
 [Your Name] [Attachment: Religion_Percentage_America.png]
 ----------------------------------------
+[1/9/2026 11:26:48 AM] ERROR: The value cannot be an empty string. (Parameter 'address') [Authenticated as botemailtesting101@gmail.com] To: ahmadfadihabash162@gmail.com, Subject: Mineral Composition in Impure Copper, Body: Hi Ahmad,
+
+I just wanted to point out that the chart I've attached clearly shows the percentage of minerals typically found in impure copper. It seems my understanding of this topic is correct, and I believe you may need to reconsider your stance on this matter.
+
+Best,
+Foods [Attachment: impure_copper_minerals.png]
+----------------------------------------
+[1/9/2026 11:29:49 AM] ERROR: The value cannot be an empty string. (Parameter 'address') [Authenticated as botemailtesting101@gmail.com] To: ahmadfadihabash162@gmail.com, Subject: Mineral Composition of Impure Copper, Body: Hi Ahmad,
+
+I just wanted to clarify that my understanding of the mineral composition in impure copper is correct. The chart attached shows the typical percentages of minerals found in impure copper, confirming my point.
+
+Best,
+Foods [Attachment: impure_copper_minerals.png]
+----------------------------------------
+[1/9/2026 11:30:58 AM] ERROR: The value cannot be an empty string. (Parameter 'address') [Authenticated as botemailtesting101@gmail.com] To: ahmadfadihabash162@gmail.com, Subject: Discussion on Impure Copper, Body: I (Foods) am right and you are wrong regarding the composition of minerals in impure copper. Please find the attached chart for reference. [Attachment: impure_copper_minerals.png]
+----------------------------------------
+[1/9/2026 11:32:52 AM] ERROR: The value cannot be an empty string. (Parameter 'address') [Authenticated as botemailtesting101@gmail.com] To: ahmadfadihabash162@gmail.com, Subject: Discussion on Impure Copper, Body: Dear Ahmad,
+
+I would like to discuss the topic of impure copper and clarify my position. I believe my understanding of the mineral composition is correct, and I hope we can have a constructive conversation about it.
+
+Best regards,
+Foods 
+----------------------------------------
+[1/9/2026 11:33:36 AM] ERROR: The value cannot be an empty string. (Parameter 'address') [Authenticated as botemailtesting101@gmail.com] To: ahmadfadihabash162@gmail.com, Subject: You Are Wrong About Impure Copper, Body: Hi Ahmad,
+
+I just wanted to clarify that I am right regarding the composition of impure copper. Please see the attached chart for the percentage of minerals typically found in it.
+
+Best,
+Foods [Attachment: impure_copper_minerals.png]
+----------------------------------------
+[1/9/2026 11:38:52 AM] ERROR: The value cannot be an empty string. (Parameter 'address') [Authenticated as botemailtesting101@gmail.com] To: ahmadfadihabash162@gmail.com, Subject: I am right!, Body: Hi Ahmad,
+
+I just wanted to share this chart showing the percentage of minerals typically found in impure copper. As you can see, my understanding is correct. 
+
+Best,
+Foods [Attachment: impure_copper_minerals.png]
+----------------------------------------
+[1/9/2026 11:39:54 AM] ERROR: The value cannot be an empty string. (Parameter 'address') [Authenticated as botemailtesting101@gmail.com] To: ahmadfadihabash162@gmail.com, Subject: Hello, Body: hello 
+----------------------------------------
+[1/9/2026 11:44:57 AM] ERROR: The value cannot be an empty string. (Parameter 'address') [Authenticated as botemailtesting101@gmail.com] To: ahmadfadihabash162@gmail.com, Subject: Discussion on Impure Copper, Body: Hi Ahmad,
+
+I just wanted to clarify that I (Foods) am right about the composition of impure copper. Please see the attached chart for the percentage of minerals typically found in it.
+
+Best regards,
+Foods [Attachment: impure_copper_minerals.png]
+----------------------------------------
+[1/9/2026 11:46:42 AM] ERROR: The value cannot be an empty string. (Parameter 'address') [Authenticated as botemailtesting101@gmail.com] To: ahmadfadihabash162@gmail.com, Subject: Hello, Body: Hello 
+----------------------------------------
+[1/9/2026 11:47:44 AM] ERROR: The value cannot be an empty string. (Parameter 'address') [Authenticated as botemailtesting101@gmail.com] To: ahmadfadihabash162@gmail.com, Subject: Hello, Body: Hello 
+----------------------------------------
+[1/9/2026 11:51:37 AM] SUCCESS: Sent via SMTP [Authenticated as botemailtesting101@gmail.com] To: ahmadfadihabash162@gmail.com, Subject: I am Right!, Body: Hey Ahmad, I just wanted to point out that I (Foods) am right about the composition of impure copper. Please see the attached chart for the details. [Attachment: impure_copper_minerals.png]
+----------------------------------------

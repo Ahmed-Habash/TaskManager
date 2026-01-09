@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6vganfhUw7QIYeX8glEQRPkF+r1pc3zhgNx8qfvEwSg=",
+  "Hash": "T1W5E33QTY7qXMecMphRdqnmdY5vT1NLbd83NCCUe4A=",
   "Source": "TaskManager",
   "BasePath": "_content/TaskManager",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "TaskManager\\wwwroot",
       "Source": "TaskManager",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TaskManager.styles.css",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TaskManager.styles.css",
       "SourceId": "TaskManager",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "TaskManager#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -35,13 +35,13 @@
       "Integrity": "MbMA4EFXYgr67ch5j78XgJAwCLV0+7ldnnPfkPI+Lwk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TaskManager.styles.css"
+      "OriginalItemSpec": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TaskManager.styles.css"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TaskManager.bundle.scp.css",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TaskManager.bundle.scp.css",
       "SourceId": "TaskManager",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "TaskManager#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -56,13 +56,13 @@
       "Integrity": "MbMA4EFXYgr67ch5j78XgJAwCLV0+7ldnnPfkPI+Lwk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TaskManager.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TaskManager.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\css\\site.css",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "css/site#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\favicon.ico",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "favicon#[.{fingerprint}]?.ico",
       "AssetKind": "All",
@@ -101,10 +101,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\js\\site.js",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "js/site#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -122,10 +122,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -143,10 +143,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -164,10 +164,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -185,10 +185,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -206,10 +206,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -227,10 +227,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -248,10 +248,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -269,10 +269,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -290,10 +290,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -311,10 +311,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -332,10 +332,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -353,10 +353,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -395,10 +395,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -437,10 +437,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -458,10 +458,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -479,10 +479,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -500,10 +500,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -521,10 +521,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -542,10 +542,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -563,10 +563,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -584,10 +584,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -605,10 +605,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -626,10 +626,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -647,10 +647,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -668,10 +668,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -689,10 +689,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -710,10 +710,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -752,10 +752,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -773,10 +773,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -794,10 +794,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -836,10 +836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -857,10 +857,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -878,10 +878,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -899,10 +899,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -920,10 +920,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -941,10 +941,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -962,10 +962,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -983,10 +983,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1004,10 +1004,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1025,10 +1025,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1046,10 +1046,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/bootstrap/LICENSE#[.{fingerprint}]?",
       "AssetKind": "All",
@@ -1067,10 +1067,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/jquery/dist/jquery#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1109,10 +1109,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1130,10 +1130,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/jquery/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -1151,10 +1151,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/jquery-validation/dist/additional-methods#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1172,10 +1172,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1193,10 +1193,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1235,10 +1235,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/jquery-validation/LICENSE#[.{fingerprint}]?.md",
       "AssetKind": "All",
@@ -1256,10 +1256,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1277,10 +1277,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1298,10 +1298,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -1319,10 +1319,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\00891ad0-48e2-4c37-8a51-c6d33b99528b.png",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\00891ad0-48e2-4c37-8a51-c6d33b99528b.png",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "uploads/folders/00891ad0-48e2-4c37-8a51-c6d33b99528b#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1340,10 +1340,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\folders\\00891ad0-48e2-4c37-8a51-c6d33b99528b.png"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\10e3862c-75e2-4ca4-9244-dccb9351f4e1.png",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\10e3862c-75e2-4ca4-9244-dccb9351f4e1.png",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "uploads/folders/10e3862c-75e2-4ca4-9244-dccb9351f4e1#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1361,10 +1361,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\folders\\10e3862c-75e2-4ca4-9244-dccb9351f4e1.png"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\2430c607-a0bc-4268-a1ef-18bd6248efac.jpg",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\2430c607-a0bc-4268-a1ef-18bd6248efac.jpg",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "uploads/folders/2430c607-a0bc-4268-a1ef-18bd6248efac#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1382,10 +1382,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\folders\\2430c607-a0bc-4268-a1ef-18bd6248efac.jpg"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\2619bc7b-d599-46e7-bd30-6df5ed501a56.jpg",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\2619bc7b-d599-46e7-bd30-6df5ed501a56.jpg",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "uploads/folders/2619bc7b-d599-46e7-bd30-6df5ed501a56#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1403,10 +1403,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\folders\\2619bc7b-d599-46e7-bd30-6df5ed501a56.jpg"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\33f613ec-feb5-4fe1-9409-2dd3c324126e.jpg",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\33f613ec-feb5-4fe1-9409-2dd3c324126e.jpg",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "uploads/folders/33f613ec-feb5-4fe1-9409-2dd3c324126e#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1424,10 +1424,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\folders\\33f613ec-feb5-4fe1-9409-2dd3c324126e.jpg"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\489d4d09-d1c2-4c65-8a7e-158de1ec827a.jpg",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\489d4d09-d1c2-4c65-8a7e-158de1ec827a.jpg",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "uploads/folders/489d4d09-d1c2-4c65-8a7e-158de1ec827a#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\folders\\489d4d09-d1c2-4c65-8a7e-158de1ec827a.jpg"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\6b1ebe2a-a631-4321-953c-816ddd85cca4.png",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\6b1ebe2a-a631-4321-953c-816ddd85cca4.png",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "uploads/folders/6b1ebe2a-a631-4321-953c-816ddd85cca4#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1466,10 +1466,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\folders\\6b1ebe2a-a631-4321-953c-816ddd85cca4.png"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\80bd0b11-0fec-4f39-9c29-91de0f53cdfb.jpg",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\80bd0b11-0fec-4f39-9c29-91de0f53cdfb.jpg",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "uploads/folders/80bd0b11-0fec-4f39-9c29-91de0f53cdfb#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1487,10 +1487,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\folders\\80bd0b11-0fec-4f39-9c29-91de0f53cdfb.jpg"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\9094bc2c-c0cb-494a-b581-6a58b5d28cbe.jpg",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\9094bc2c-c0cb-494a-b581-6a58b5d28cbe.jpg",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "uploads/folders/9094bc2c-c0cb-494a-b581-6a58b5d28cbe#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1508,10 +1508,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\folders\\9094bc2c-c0cb-494a-b581-6a58b5d28cbe.jpg"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\9ecb886f-99f8-4533-99a5-f868db50ab26.jpg",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\9ecb886f-99f8-4533-99a5-f868db50ab26.jpg",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "uploads/folders/9ecb886f-99f8-4533-99a5-f868db50ab26#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1529,10 +1529,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\folders\\9ecb886f-99f8-4533-99a5-f868db50ab26.jpg"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\9f81f12e-56c2-4ab4-9141-be26ed6f1036.png",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\9f81f12e-56c2-4ab4-9141-be26ed6f1036.png",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "uploads/folders/9f81f12e-56c2-4ab4-9141-be26ed6f1036#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1550,10 +1550,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\folders\\9f81f12e-56c2-4ab4-9141-be26ed6f1036.png"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\b4fcc642-0406-47c9-a6cb-a97f41c9a480.jpg",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\b4fcc642-0406-47c9-a6cb-a97f41c9a480.jpg",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "uploads/folders/b4fcc642-0406-47c9-a6cb-a97f41c9a480#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1571,10 +1571,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\folders\\b4fcc642-0406-47c9-a6cb-a97f41c9a480.jpg"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\dd029b24-ee79-43f5-ab33-04e96f641acd.jpg",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\dd029b24-ee79-43f5-ab33-04e96f641acd.jpg",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "uploads/folders/dd029b24-ee79-43f5-ab33-04e96f641acd#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1592,10 +1592,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\folders\\dd029b24-ee79-43f5-ab33-04e96f641acd.jpg"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\df165d26-3d14-41c9-9088-068670bf6e04.jpg",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\df165d26-3d14-41c9-9088-068670bf6e04.jpg",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "uploads/folders/df165d26-3d14-41c9-9088-068670bf6e04#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1613,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\folders\\df165d26-3d14-41c9-9088-068670bf6e04.jpg"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\dfd7d4d8-2055-4174-b3c2-11476fb27a77.jpg",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\dfd7d4d8-2055-4174-b3c2-11476fb27a77.jpg",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "uploads/folders/dfd7d4d8-2055-4174-b3c2-11476fb27a77#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1634,10 +1634,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\folders\\dfd7d4d8-2055-4174-b3c2-11476fb27a77.jpg"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\f0fb9cc1-ea1a-44aa-8f54-a4d21da44407.jpg",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\f0fb9cc1-ea1a-44aa-8f54-a4d21da44407.jpg",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "uploads/folders/f0fb9cc1-ea1a-44aa-8f54-a4d21da44407#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1655,10 +1655,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\folders\\f0fb9cc1-ea1a-44aa-8f54-a4d21da44407.jpg"
     },
     {
-      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\fb8e3a91-f576-44c9-8da6-7144f9d252e9.png",
+      "Identity": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\fb8e3a91-f576-44c9-8da6-7144f9d252e9.png",
       "SourceId": "TaskManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\",
       "BasePath": "_content/TaskManager",
       "RelativePath": "uploads/folders/fb8e3a91-f576-44c9-8da6-7144f9d252e9#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1679,7 +1679,7 @@
   "Endpoints": [
     {
       "Route": "css/site.6654v1c3yj.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\css\\site.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1724,7 +1724,7 @@
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\css\\site.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1761,7 +1761,7 @@
     },
     {
       "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\favicon.ico",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1806,7 +1806,7 @@
     },
     {
       "Route": "favicon.ico",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\favicon.ico",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1843,7 +1843,7 @@
     },
     {
       "Route": "js/site.1p6dtj9vud.js",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\js\\site.js",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1888,7 +1888,7 @@
     },
     {
       "Route": "js/site.js",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\js\\site.js",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1925,7 +1925,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1962,7 +1962,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.73kdqttayv.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2007,7 +2007,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2044,7 +2044,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.bpk8xqwxhs.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2089,7 +2089,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2126,7 +2126,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.8inm30yfxf.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2171,7 +2171,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2208,7 +2208,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.mpyigms19s.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2253,7 +2253,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2290,7 +2290,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.4gxs3k148c.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2335,7 +2335,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2372,7 +2372,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.9b9oa1qrmt.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2417,7 +2417,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2454,7 +2454,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.fctod5rc9n.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2499,7 +2499,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2536,7 +2536,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.ve6x09088i.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2581,7 +2581,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.agp80tu62r.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2626,7 +2626,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2663,7 +2663,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2700,7 +2700,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.st1cbwfwo5.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2745,7 +2745,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2782,7 +2782,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.5vj65cig9w.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2827,7 +2827,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2864,7 +2864,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.unj9p35syc.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2909,7 +2909,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2946,7 +2946,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.2q4vfeazbq.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2991,7 +2991,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3028,7 +3028,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3065,7 +3065,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3102,7 +3102,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.o371a8zbv2.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3147,7 +3147,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.n1oizzvkh6.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3192,7 +3192,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.q2ku51ktnl.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3237,7 +3237,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.7na4sro3qu.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3282,7 +3282,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3319,7 +3319,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.jeal3x0ldm.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3364,7 +3364,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3401,7 +3401,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3438,7 +3438,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3475,7 +3475,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.okkk44j0xs.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3520,7 +3520,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.f8imaxxbri.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3565,7 +3565,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.0wve5yxp74.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3610,7 +3610,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3647,7 +3647,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.cwzlr5n8x4.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3692,7 +3692,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3729,7 +3729,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3766,7 +3766,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3803,7 +3803,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.wmug9u23qg.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3848,7 +3848,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.npxfuf8dg6.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3893,7 +3893,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3930,7 +3930,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.j75batdsum.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3975,7 +3975,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4012,7 +4012,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.16095smhkz.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4057,7 +4057,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4094,7 +4094,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4131,7 +4131,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.vy0bq9ydhf.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4176,7 +4176,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.b4skse8du6.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4221,7 +4221,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4258,7 +4258,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.ab1c3rmv7g.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4303,7 +4303,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4340,7 +4340,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4377,7 +4377,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.56d2bn4wt9.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4422,7 +4422,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4459,7 +4459,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.u3xrusw2ol.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4504,7 +4504,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.tey0rigmnh.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4549,7 +4549,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4586,7 +4586,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.kbynt5jhd9.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4631,7 +4631,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4668,7 +4668,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.l2av4jpuoj.js",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4713,7 +4713,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.25iw1kog22.js",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4758,7 +4758,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4795,7 +4795,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.c2nslu3uf3.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4840,7 +4840,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4877,7 +4877,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4914,7 +4914,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.2lgwfvgpvi.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4959,7 +4959,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4996,7 +4996,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.m39kt2b5c9.js",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5041,7 +5041,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5078,7 +5078,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5115,7 +5115,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.wsezl0heh6.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5160,7 +5160,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.um2aeqy4ik.js",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5205,7 +5205,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5242,7 +5242,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.6ukhryfubh.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5287,7 +5287,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5324,7 +5324,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5361,7 +5361,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5398,7 +5398,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.u33ctipx7g.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5443,7 +5443,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.zwph15dxgs.js",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5488,7 +5488,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.o4kw7cc6tf.js",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5533,7 +5533,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5570,7 +5570,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE.81b7ukuj9c",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5615,7 +5615,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.fwhahm2icz.js",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5660,7 +5660,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.js",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5697,7 +5697,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.5pze98is44.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5742,7 +5742,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.dd6z7egasc.js",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5787,7 +5787,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.js",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5824,7 +5824,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.map",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5861,7 +5861,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.mlv21k5csn.txt",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5906,7 +5906,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.txt",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5943,7 +5943,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.ay5nd8zt9x.js",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5988,7 +5988,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.js",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6025,7 +6025,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.9oaff4kq20.js",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6070,7 +6070,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.js",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6107,7 +6107,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.js",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6144,7 +6144,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.b7iojwaux1.js",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6189,7 +6189,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.js",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6226,7 +6226,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.pzqfkb6aqo.js",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6271,7 +6271,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.md",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6308,7 +6308,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.x0q3zqp4vz.md",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6353,7 +6353,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.47otxtyo56.js",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6398,7 +6398,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6435,7 +6435,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.4v8eqarkd7.js",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6480,7 +6480,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6517,7 +6517,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.356vix0kms.txt",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6562,7 +6562,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.txt",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6599,7 +6599,7 @@
     },
     {
       "Route": "TaskManager.bundle.scp.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TaskManager.bundle.scp.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TaskManager.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6636,7 +6636,7 @@
     },
     {
       "Route": "TaskManager.styles.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TaskManager.styles.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TaskManager.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6673,7 +6673,7 @@
     },
     {
       "Route": "TaskManager.zjkr07rejo.bundle.scp.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TaskManager.bundle.scp.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TaskManager.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6718,7 +6718,7 @@
     },
     {
       "Route": "TaskManager.zjkr07rejo.styles.css",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TaskManager.styles.css",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TaskManager.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6763,7 +6763,7 @@
     },
     {
       "Route": "uploads/folders/00891ad0-48e2-4c37-8a51-c6d33b99528b.n0x55xplwm.png",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\00891ad0-48e2-4c37-8a51-c6d33b99528b.png",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\00891ad0-48e2-4c37-8a51-c6d33b99528b.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6808,7 +6808,7 @@
     },
     {
       "Route": "uploads/folders/00891ad0-48e2-4c37-8a51-c6d33b99528b.png",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\00891ad0-48e2-4c37-8a51-c6d33b99528b.png",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\00891ad0-48e2-4c37-8a51-c6d33b99528b.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6845,7 +6845,7 @@
     },
     {
       "Route": "uploads/folders/10e3862c-75e2-4ca4-9244-dccb9351f4e1.47sxyzz3gq.png",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\10e3862c-75e2-4ca4-9244-dccb9351f4e1.png",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\10e3862c-75e2-4ca4-9244-dccb9351f4e1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6890,7 +6890,7 @@
     },
     {
       "Route": "uploads/folders/10e3862c-75e2-4ca4-9244-dccb9351f4e1.png",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\10e3862c-75e2-4ca4-9244-dccb9351f4e1.png",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\10e3862c-75e2-4ca4-9244-dccb9351f4e1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6927,7 +6927,7 @@
     },
     {
       "Route": "uploads/folders/2430c607-a0bc-4268-a1ef-18bd6248efac.jpg",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\2430c607-a0bc-4268-a1ef-18bd6248efac.jpg",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\2430c607-a0bc-4268-a1ef-18bd6248efac.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6964,7 +6964,7 @@
     },
     {
       "Route": "uploads/folders/2430c607-a0bc-4268-a1ef-18bd6248efac.xnrwh5auxx.jpg",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\2430c607-a0bc-4268-a1ef-18bd6248efac.jpg",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\2430c607-a0bc-4268-a1ef-18bd6248efac.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7009,7 +7009,7 @@
     },
     {
       "Route": "uploads/folders/2619bc7b-d599-46e7-bd30-6df5ed501a56.jpg",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\2619bc7b-d599-46e7-bd30-6df5ed501a56.jpg",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\2619bc7b-d599-46e7-bd30-6df5ed501a56.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7046,7 +7046,7 @@
     },
     {
       "Route": "uploads/folders/2619bc7b-d599-46e7-bd30-6df5ed501a56.xnrwh5auxx.jpg",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\2619bc7b-d599-46e7-bd30-6df5ed501a56.jpg",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\2619bc7b-d599-46e7-bd30-6df5ed501a56.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7091,7 +7091,7 @@
     },
     {
       "Route": "uploads/folders/33f613ec-feb5-4fe1-9409-2dd3c324126e.jpg",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\33f613ec-feb5-4fe1-9409-2dd3c324126e.jpg",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\33f613ec-feb5-4fe1-9409-2dd3c324126e.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7128,7 +7128,7 @@
     },
     {
       "Route": "uploads/folders/33f613ec-feb5-4fe1-9409-2dd3c324126e.xnrwh5auxx.jpg",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\33f613ec-feb5-4fe1-9409-2dd3c324126e.jpg",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\33f613ec-feb5-4fe1-9409-2dd3c324126e.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7173,7 +7173,7 @@
     },
     {
       "Route": "uploads/folders/489d4d09-d1c2-4c65-8a7e-158de1ec827a.jpg",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\489d4d09-d1c2-4c65-8a7e-158de1ec827a.jpg",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\489d4d09-d1c2-4c65-8a7e-158de1ec827a.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7210,7 +7210,7 @@
     },
     {
       "Route": "uploads/folders/489d4d09-d1c2-4c65-8a7e-158de1ec827a.xnrwh5auxx.jpg",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\489d4d09-d1c2-4c65-8a7e-158de1ec827a.jpg",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\489d4d09-d1c2-4c65-8a7e-158de1ec827a.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7255,7 +7255,7 @@
     },
     {
       "Route": "uploads/folders/6b1ebe2a-a631-4321-953c-816ddd85cca4.n0x55xplwm.png",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\6b1ebe2a-a631-4321-953c-816ddd85cca4.png",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\6b1ebe2a-a631-4321-953c-816ddd85cca4.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7300,7 +7300,7 @@
     },
     {
       "Route": "uploads/folders/6b1ebe2a-a631-4321-953c-816ddd85cca4.png",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\6b1ebe2a-a631-4321-953c-816ddd85cca4.png",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\6b1ebe2a-a631-4321-953c-816ddd85cca4.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7337,7 +7337,7 @@
     },
     {
       "Route": "uploads/folders/80bd0b11-0fec-4f39-9c29-91de0f53cdfb.jpg",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\80bd0b11-0fec-4f39-9c29-91de0f53cdfb.jpg",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\80bd0b11-0fec-4f39-9c29-91de0f53cdfb.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7374,7 +7374,7 @@
     },
     {
       "Route": "uploads/folders/80bd0b11-0fec-4f39-9c29-91de0f53cdfb.xnrwh5auxx.jpg",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\80bd0b11-0fec-4f39-9c29-91de0f53cdfb.jpg",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\80bd0b11-0fec-4f39-9c29-91de0f53cdfb.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7419,7 +7419,7 @@
     },
     {
       "Route": "uploads/folders/9094bc2c-c0cb-494a-b581-6a58b5d28cbe.jpg",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\9094bc2c-c0cb-494a-b581-6a58b5d28cbe.jpg",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\9094bc2c-c0cb-494a-b581-6a58b5d28cbe.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7456,7 +7456,7 @@
     },
     {
       "Route": "uploads/folders/9094bc2c-c0cb-494a-b581-6a58b5d28cbe.xnrwh5auxx.jpg",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\9094bc2c-c0cb-494a-b581-6a58b5d28cbe.jpg",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\9094bc2c-c0cb-494a-b581-6a58b5d28cbe.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7501,7 +7501,7 @@
     },
     {
       "Route": "uploads/folders/9ecb886f-99f8-4533-99a5-f868db50ab26.jpg",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\9ecb886f-99f8-4533-99a5-f868db50ab26.jpg",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\9ecb886f-99f8-4533-99a5-f868db50ab26.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7538,7 +7538,7 @@
     },
     {
       "Route": "uploads/folders/9ecb886f-99f8-4533-99a5-f868db50ab26.xnrwh5auxx.jpg",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\9ecb886f-99f8-4533-99a5-f868db50ab26.jpg",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\9ecb886f-99f8-4533-99a5-f868db50ab26.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7583,7 +7583,7 @@
     },
     {
       "Route": "uploads/folders/9f81f12e-56c2-4ab4-9141-be26ed6f1036.png",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\9f81f12e-56c2-4ab4-9141-be26ed6f1036.png",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\9f81f12e-56c2-4ab4-9141-be26ed6f1036.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7620,7 +7620,7 @@
     },
     {
       "Route": "uploads/folders/9f81f12e-56c2-4ab4-9141-be26ed6f1036.yy4pcjy141.png",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\9f81f12e-56c2-4ab4-9141-be26ed6f1036.png",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\9f81f12e-56c2-4ab4-9141-be26ed6f1036.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7665,7 +7665,7 @@
     },
     {
       "Route": "uploads/folders/b4fcc642-0406-47c9-a6cb-a97f41c9a480.jpg",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\b4fcc642-0406-47c9-a6cb-a97f41c9a480.jpg",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\b4fcc642-0406-47c9-a6cb-a97f41c9a480.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7702,7 +7702,7 @@
     },
     {
       "Route": "uploads/folders/b4fcc642-0406-47c9-a6cb-a97f41c9a480.xnrwh5auxx.jpg",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\b4fcc642-0406-47c9-a6cb-a97f41c9a480.jpg",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\b4fcc642-0406-47c9-a6cb-a97f41c9a480.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7747,7 +7747,7 @@
     },
     {
       "Route": "uploads/folders/dd029b24-ee79-43f5-ab33-04e96f641acd.8i2yu1hmhj.jpg",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\dd029b24-ee79-43f5-ab33-04e96f641acd.jpg",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\dd029b24-ee79-43f5-ab33-04e96f641acd.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7792,7 +7792,7 @@
     },
     {
       "Route": "uploads/folders/dd029b24-ee79-43f5-ab33-04e96f641acd.jpg",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\dd029b24-ee79-43f5-ab33-04e96f641acd.jpg",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\dd029b24-ee79-43f5-ab33-04e96f641acd.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7829,7 +7829,7 @@
     },
     {
       "Route": "uploads/folders/df165d26-3d14-41c9-9088-068670bf6e04.jpg",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\df165d26-3d14-41c9-9088-068670bf6e04.jpg",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\df165d26-3d14-41c9-9088-068670bf6e04.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7866,7 +7866,7 @@
     },
     {
       "Route": "uploads/folders/df165d26-3d14-41c9-9088-068670bf6e04.xnrwh5auxx.jpg",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\df165d26-3d14-41c9-9088-068670bf6e04.jpg",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\df165d26-3d14-41c9-9088-068670bf6e04.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7911,7 +7911,7 @@
     },
     {
       "Route": "uploads/folders/dfd7d4d8-2055-4174-b3c2-11476fb27a77.jpg",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\dfd7d4d8-2055-4174-b3c2-11476fb27a77.jpg",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\dfd7d4d8-2055-4174-b3c2-11476fb27a77.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7948,7 +7948,7 @@
     },
     {
       "Route": "uploads/folders/dfd7d4d8-2055-4174-b3c2-11476fb27a77.xnrwh5auxx.jpg",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\dfd7d4d8-2055-4174-b3c2-11476fb27a77.jpg",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\dfd7d4d8-2055-4174-b3c2-11476fb27a77.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7993,7 +7993,7 @@
     },
     {
       "Route": "uploads/folders/f0fb9cc1-ea1a-44aa-8f54-a4d21da44407.jpg",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\f0fb9cc1-ea1a-44aa-8f54-a4d21da44407.jpg",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\f0fb9cc1-ea1a-44aa-8f54-a4d21da44407.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8030,7 +8030,7 @@
     },
     {
       "Route": "uploads/folders/f0fb9cc1-ea1a-44aa-8f54-a4d21da44407.xnrwh5auxx.jpg",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\f0fb9cc1-ea1a-44aa-8f54-a4d21da44407.jpg",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\f0fb9cc1-ea1a-44aa-8f54-a4d21da44407.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8075,7 +8075,7 @@
     },
     {
       "Route": "uploads/folders/fb8e3a91-f576-44c9-8da6-7144f9d252e9.47sxyzz3gq.png",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\fb8e3a91-f576-44c9-8da6-7144f9d252e9.png",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\fb8e3a91-f576-44c9-8da6-7144f9d252e9.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8120,7 +8120,7 @@
     },
     {
       "Route": "uploads/folders/fb8e3a91-f576-44c9-8da6-7144f9d252e9.png",
-      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\stuffstuff\\TaskManager\\TaskManager\\wwwroot\\uploads\\folders\\fb8e3a91-f576-44c9-8da6-7144f9d252e9.png",
+      "AssetFile": "C:\\Users\\ahmad\\OneDrive\\Desktop\\Github\\TaskManager\\wwwroot\\uploads\\folders\\fb8e3a91-f576-44c9-8da6-7144f9d252e9.png",
       "Selectors": [],
       "ResponseHeaders": [
         {

@@ -2,8 +2,8 @@
   "Email:Username": "botemailtesting101@gmail.com",
   "Email:Password": "ouir nhnm cgda xwhr",
   "AI:Priority": [
+    "OpenRouter",
     "OpenAI",
-    "Gemini",
-    "OpenRouter"
+    "Gemini"
   ]
 }

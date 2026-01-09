@@ -1,8 +1,14 @@
 import requests
 import json
+import os
 
-api_key = "AIzaSyAMXgzU7ULWruu7StcotDShSJyJseVTjxE"
-cx = "d18f1d40571af426a"
+api_key = os.environ.get("GOOGLE__ApiKey")
+cx = os.environ.get("GOOGLE__SearchEngineId")
+
+if not api_key or not cx:
+    print("Error: Missing environment variables GOOGLE__ApiKey or GOOGLE__SearchEngineId")
+    exit(1)
+
 query = "terraria duke fishron"
 
 url = f"https://www.googleapis.com/customsearch/v1?key={api_key}&cx={cx}&q={query}&searchType=image&num=1"

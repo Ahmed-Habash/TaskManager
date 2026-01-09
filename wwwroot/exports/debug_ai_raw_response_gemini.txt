@@ -1,12 +1,12 @@
-[1/8/2026 4:53:59 PM] Raw Response:
+[1/9/2026 11:18:53 AM] Raw Response:
 {
   "candidates": [
     {
       "content": {
         "parts": [
           {
-            "text": "[\n  {\n    \"action\": \"SEARCH_WEB\",\n    \"parameters\": {\n      \"query\": \"site:temu.com \\\"gaming microphone\\\" -s.html lowest price -p.html\"\n    }\n  }\n]",
-            "thoughtSignature": "CqkCAXLI2nw+ftOdhtSK7mm8trHxOe08dcEKx6fYYhYbl5j3Uogxw+BCnqgFL6KP44CjTwHwmXJHf2FEBsPhhBhKBW/lWSYzhWN6ObS6Dc4s9rhRZD13lWwB9uac0N4FWbD31X5frby53y+LnlnbreG97rVXOvgvjtgbeXGa3cMn9LpL6Wrwppji/xjUotiaYFbzW/ymPH0n2PpK4lvX7ZMYb5ca+eOZy2HKG6F6Ya62/VoeWpgnhf2KV74xmOCGC/JwR/dhVNEwUY5lNwMsx0waX8Ire2i1TYVv/zIy8/eXrsndaBlRUVkNP6ornUtV+X1tN+SaY/TCdM0CP6qTBsxj0iiZpl4zBsBfDZ95sUZOd8/jUNI4RJNW+vFXlnh7Kuf2k9fX25ku6THj"
+            "text": "[\n  {\n    \"action\": \"SEARCH_WEB\",\n    \"parameters\": {\n      \"query\": \"buy cheap computer monitor deals\"\n    }\n  }\n]",
+            "thoughtSignature": "CpwBAXLI2nzP0Ig0oEBxnPairZP3HqdimImCzs3X/ZHlivW0Qk6WAwqHlg7sLpMBrYWwe+79zSO1YF7Ns78m+mW4Q7ReIHkwgp7w/MYZYfYdWDNdRySx8c517pMM5BXlXfXC46n9SkA3jYoRyO7HvY+/cgw5JqC8YWcoCFy6GUhfajsQFPEi3hhRUzTTgJB7CN7W/9TNQAjxmouUo8JH"
           }
         ],
         "role": "model"
@@ -16,17 +16,17 @@
     }
   ],
   "usageMetadata": {
-    "promptTokenCount": 1110,
-    "candidatesTokenCount": 55,
-    "totalTokenCount": 1221,
+    "promptTokenCount": 1106,
+    "candidatesTokenCount": 40,
+    "totalTokenCount": 1169,
     "promptTokensDetails": [
       {
         "modality": "TEXT",
-        "tokenCount": 1110
+        "tokenCount": 1106
       }
     ],
-    "thoughtsTokenCount": 56
+    "thoughtsTokenCount": 23
   },
   "modelVersion": "gemini-2.5-flash-preview-09-2025",
-  "responseId": "-LZfabqgLquivdIPtMuhsAs"
+  "responseId": "7rlgaZ67G4DyvdIPma-cqQM"
 }

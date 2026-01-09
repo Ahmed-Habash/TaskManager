@@ -162,6 +162,7 @@ Actions:
 
 Examples:
 - User: 'my email is a@b.com and pass is 123' -> [{""action"": ""SET_EMAIL_CREDENTIALS"", ""parameters"": {""email"": ""a@b.com"", ""password"": ""123""}}, {""action"": ""CHAT"", ""parameters"": {""message"": ""I've remembered your email credentials for future use.""}}]
+- User: 'email hello to test@test.com' -> [{""action"": ""SEND_EMAIL"", ""parameters"": {""to"": ""test@test.com"", ""subject"": ""Hello"", ""body"": ""This is a test email.""}}]
 - User: 'create a ppt about lions' -> [{""action"": ""CREATE_DOCUMENT"", ""parameters"": {""file_name"": ""Lions.pptx"", ""type"": ""ppt"", ""content"": ""Slide 1: Intro\nVisual Keywords: lion\n- Lions are predators...\nSlide 2: Habitat...""}}]
 - User: 'make a 20 slide presentation about space' -> [{""action"": ""CREATE_DOCUMENT"", ""parameters"": {""file_name"": ""Space_Exploration.pptx"", ""type"": ""ppt"", ""content"": ""Slide 1: Intro...\nSlide 2: ...\n[ALL 20 SLIDES HERE]""}}]
 - User: 'what is the weather' -> [{""action"": ""SEARCH_WEB"", ""parameters"": {""query"": ""current weather""}}]

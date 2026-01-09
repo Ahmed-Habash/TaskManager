@@ -291,6 +291,9 @@ namespace TaskManager.Services
                         {
                             string to = "";
                             if (parameters.TryGetProperty("to", out var toProp)) to = toProp.GetString() ?? "";
+                            if (string.IsNullOrEmpty(to) && parameters.TryGetProperty("email", out var emailProp)) to = emailProp.GetString() ?? "";
+                            if (string.IsNullOrEmpty(to) && parameters.TryGetProperty("recipient", out var recProp)) to = recProp.GetString() ?? "";
+                            if (string.IsNullOrEmpty(to) && parameters.TryGetProperty("address", out var addrProp)) to = addrProp.GetString() ?? "";
 
                             string subject = "No Subject";
                             if (parameters.TryGetProperty("subject", out var subProp)) subject = subProp.GetString() ?? "No Subject";
@@ -1142,27 +1145,47 @@ namespace TaskManager.Services
                 if (string.IsNullOrEmpty(configUser) || string.IsNullOrEmpty(configPass) || isPlaceholder)
                 {
                     var settingsPath = Path.Combine(_environment.ContentRootPath, "user_settings.json");
+                    await File.AppendAllTextAsync(Path.Combine(_environment.WebRootPath, "exports", "debug_email.txt"), $"[{DateTime.Now}] Checking settings at {settingsPath}\n");
+                    
                     if (File.Exists(settingsPath))
                     {
                         try
                         {
                             var settingsJson = await File.ReadAllTextAsync(settingsPath);
-                            var settings = JsonSerializer.Deserialize<Dictionary<string, string>>(settingsJson);
-                            if (settings != null)
+                            await File.AppendAllTextAsync(Path.Combine(_environment.WebRootPath, "exports", "debug_email.txt"), $"JSON content: {settingsJson}\n");
+                            
+                            var settingsNode = JsonNode.Parse(settingsJson);
+                            if (settingsNode != null)
                             {
-                                if ((string.IsNullOrEmpty(configUser) || configUser == "YOUR_EMAIL@gmail.com") && settings.ContainsKey("Email:Username")) configUser = settings["Email:Username"];
-                                if ((string.IsNullOrEmpty(configPass) || configPass == "YOUR_APP_PASSWORD_HERE") && settings.ContainsKey("Email:Password")) configPass = settings["Email:Password"];
+                                if ((string.IsNullOrEmpty(configUser) || configUser == "YOUR_EMAIL@gmail.com") && settingsNode["Email:Username"] != null) 
+                                {
+                                    configUser = settingsNode["Email:Username"]?.GetValue<string>();
+                                    await File.AppendAllTextAsync(Path.Combine(_environment.WebRootPath, "exports", "debug_email.txt"), $"Found Username: {configUser}\n");
+                                }
+                                
+                                if ((string.IsNullOrEmpty(configPass) || configPass == "YOUR_APP_PASSWORD_HERE") && settingsNode["Email:Password"] != null)
+                                {
+                                    configPass = settingsNode["Email:Password"]?.GetValue<string>();
+                                    await File.AppendAllTextAsync(Path.Combine(_environment.WebRootPath, "exports", "debug_email.txt"), "Found Password\n");
+                                }
                             }
                         }
-                        catch { }
+                        catch (Exception ex) 
+                        { 
+                             await File.AppendAllTextAsync(Path.Combine(_environment.WebRootPath, "exports", "debug_email.txt"), $"Error parsing settings: {ex.Message}\n");
+                        }
                     }
                 }
 
-                var senderEmail = _configuration["Email:SenderEmail"] ?? configUser;
+                var senderEmail = _configuration["Email:SenderEmail"];
+                if (string.IsNullOrEmpty(senderEmail)) senderEmail = configUser;
+                
                 var senderName = _configuration["Email:SenderName"] ?? "TaskManager AI";
 
                 finalUser = !string.IsNullOrEmpty(username) ? username : configUser;
                 finalPass = !string.IsNullOrEmpty(password) ? password : configPass;
+                
+                await File.AppendAllTextAsync(Path.Combine(_environment.WebRootPath, "exports", "debug_email.txt"), $"FinalUser: {finalUser}, To: {to}, Sender: {senderEmail}\n");
 
                 if (string.IsNullOrEmpty(finalUser) || string.IsNullOrEmpty(finalPass))
                 {
